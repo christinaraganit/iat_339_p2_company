@@ -1,0 +1,96 @@
+@import url("../variables.css");
+
+body {
+  padding: var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2xl);
+}
+
+.color-palette {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--sp-base);
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  gap: var(--sp-xs);
+}
+
+.color > div {
+  width: var(--sp-6xl);
+  height: var(--sp-2xl);
+  border: 1px solid var(--zinc-700);
+}
+
+.element {
+  padding-top: var(--sp-xl);
+  border-top-width: 0.075rem;
+  border-top-style: solid;
+  border-top-color: var(--zinc-700);
+}
+
+.element:not(.element:last-of-type) {
+  padding-bottom: var(--sp-2xl);
+}
+
+.element > p:last-child {
+  margin-bottom: 0;
+}
+
+section:not(section:last-of-type) {
+  margin-bottom: var(--sp-2xl);
+}
+
+/* Background Color Variables */
+.bg-zinc-950 {
+  background-color: var(--zinc-950);
+}
+
+.bg-zinc-900 {
+  background-color: var(--zinc-900);
+}
+
+.bg-zinc-800 {
+  background-color: var(--zinc-800);
+}
+
+.bg-zinc-700 {
+  background-color: var(--zinc-700);
+}
+
+.bg-zinc-600 {
+  background-color: var(--zinc-600);
+}
+
+.bg-zinc-500 {
+  background-color: var(--zinc-500);
+}
+
+.bg-text-primary {
+  background-color: var(--text-primary);
+}
+
+.bg-text-secondary {
+  background-color: var(--text-secondary);
+}
+
+.bg-text-tertiary {
+  background-color: var(--text-tertiary);
+}
+
+.bg-primary-500 {
+  background-color: var(--primary-500);
+}
+
+.bg-primary-600 {
+  background-color: var(--primary-600);
+}
+
+.bg-primary-700 {
+  background-color: var(--primary-700);
+}

@@ -18,6 +18,7 @@ h3,
 h4 {
   font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  margin-bottom: var(--sp-xs);
 }
 
 h1,
@@ -28,4 +29,97 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+p,
+ul,
+code,
+ol {
+  max-width: 40rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4.9375rem;
+  line-height: 6.25rem;
+}
+
+h1.large {
+  font-size: 6.25rem;
+  line-height: 7.75rem;
+}
+
+h2 {
+  font-size: 3.8125rem;
+  line-height: 4.9375rem;
+}
+
+h3 {
+  font-size: 2.875rem;
+  line-height: 3.8125rem;
+}
+
+h4 {
+  font-size: 2.125rem;
+  line-height: 2.875rem;
+}
+
+h5 {
+  font-size: 1.0625rem;
+  line-height: 1.4375rem;
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  margin-bottom: var(--sp-sm);
+  font-weight: 600;
+}
+
+p.label {
+  font-stretch: condensed;
+  font-size: 1rem;
+  line-height: 0.9375rem;
+  margin-bottom: var(--sp-xs);
+  font-weight: 500;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: var(--sp-xl);
+}
+
+p.label.orange {
+  color: var(--primary-500);
+}
+
+small {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  margin-bottom: var(--sp-base);
+}
+
+.hubot-sans {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+}
+
+.hubot-sans-condensed {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+}
+
+.mango-grotesque {
+  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+code {
+  display: block;
+  padding: var(--sp-sm);
+  background-color: var(--zinc-900);
+  border: 1px solid var(--zinc-700);
+  margin-bottom: var(--sp-xl);
 }

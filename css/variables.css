@@ -30,4 +30,14 @@
   --sp-4xl: 2.5rem /* 40px */;
   --sp-5xl: 3rem /* 48px */;
   --sp-6xl: 4rem /* 64px */;
+  --sp-7xl: 6rem /* 96px */;
+  --sp-8xl: 8rem /* 128px */;
+  --sp-9xl: 10rem /* 160px */;
+
+  /* Image sizes */
+  --img-sm: 3rem /* 48px */;
+  --img-base: 6rem /* 96px */;
+  --img-lg: 12rem /* 192px */;
+  --img-xl: 24rem /* 384px */;
+  --img-2xl: 48rem /* 768px */;
 }

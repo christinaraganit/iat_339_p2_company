@@ -1,0 +1,53 @@
+@import url("/css/variables.css");
+
+html {
+  background-color: var(--zinc-950);
+  color: var(--text-primary);
+}
+
+a:visited,
+a {
+  color: var(--text-primary);
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: var(--primary-500);
+}
+
+a.primary {
+  background-color: var(--primary-500);
+  text-decoration: none;
+  font-stretch: condensed;
+  font-size: 1.0625rem;
+  line-height: 1.4375rem;
+  font-weight: 500;
+  color: var(--zinc-950);
+  padding: var(--sp-xs) var(--sp-base);
+  display: inline-flex;
+  gap: var(--sp-2xs);
+  transition: background-color 0.25s;
+}
+
+a.primary:hover {
+  background-color: var(--primary-600);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section img {
+  max-width: var(--img-xl);
+}
+
+.image-link > img,
+a img {
+  transition: scale 0.25s;
+}
+
+.image-link > img:hover,
+a img:hover {
+  scale: 1.025;
+}
