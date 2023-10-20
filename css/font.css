@@ -56,24 +56,20 @@ h2 {
 
 h3 {
   font-size: 2.875rem;
-  line-height: 3.8125rem;
 }
 
 h4 {
   font-size: 2.125rem;
-  line-height: 2.875rem;
 }
 
 h5 {
   font-size: 1.0625rem;
-  line-height: 1.4375rem;
   margin-bottom: var(--sp-sm);
   font-weight: 500;
 }
 
 h6 {
   font-size: 0.875rem;
-  line-height: 1.0625rem;
   margin-bottom: var(--sp-sm);
   font-weight: 600;
 }

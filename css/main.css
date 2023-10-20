@@ -1,5 +1,9 @@
 @import url("/css/variables.css");
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: var(--zinc-950);
   color: var(--text-primary);
@@ -44,10 +48,15 @@ section img {
 
 .image-link > img,
 a img {
+  display: block;
   transition: scale 0.25s;
 }
 
 .image-link > img:hover,
 a img:hover {
   scale: 1.025;
+}
+
+input[type="checkbox"] {
+  background-color: transparent;
 }
