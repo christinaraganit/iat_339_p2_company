@@ -1,5 +1,6 @@
 @import url("/css/variables.css");
 
+
 html {
   background-color: var(--zinc-950);
   color: var(--text-primary);
@@ -50,4 +51,8 @@ a img {
 .image-link > img:hover,
 a img:hover {
   scale: 1.025;
+}
+svg{
+  width: var(--sp-2xl)
+
 }
