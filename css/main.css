@@ -60,3 +60,60 @@ a img:hover {
 input[type="checkbox"] {
   background-color: transparent;
 }
+
+a {
+  text-underline-offset: var(--sp-3xs);
+}
+
+button,
+a.primary,
+a.secondary,
+a.tertiary {
+  min-height: var(--sp-4xl);
+  height: var(--sp-4xl);
+}
+
+button {
+  font-size: 0.875rem;
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--sp-xs);
+  margin-top: var(--sp-2xs);
+  margin-bottom: var(--sp-base);
+}
+
+.btn-group button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.btn-group button:hover {
+  border-color: var(--primary-500);
+  color: var(--primary-500);
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.btn-group button:focus {
+  background-color: var(--primary-500);
+  color: var(--zinc-950);
+  border-color: var(--primary-500);
+}
+
+.promo-card {
+  border: 1px solid var(--zinc-700);
+  padding: var(--sp-base);
+  text-align: center;
+}
+
+.promo-card h4,
+.promo-card h5,
+.promo-card p,
+.promo-card small {
+  margin-bottom: 0;
+}

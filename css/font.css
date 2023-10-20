@@ -27,7 +27,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+ol {
   margin-top: 0;
 }
 
@@ -46,12 +48,11 @@ h1 {
 
 h1.large {
   font-size: 6.25rem;
-  line-height: 7.75rem;
 }
 
 h2 {
   font-size: 3.8125rem;
-  line-height: 4.9375rem;
+  line-height: 90%;
 }
 
 h3 {
@@ -76,7 +77,7 @@ h6 {
 
 p.label {
   font-stretch: condensed;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 0.9375rem;
   margin-bottom: var(--sp-xs);
   font-weight: 500;
@@ -85,6 +86,7 @@ p.label {
 }
 
 p {
+  line-height: 175%;
   margin-bottom: var(--sp-xl);
 }
 
