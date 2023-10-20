@@ -1,6 +1,11 @@
 @import url("../variables.css");
+
+main {
+  margin-top: var(--sp-4xl);
+}
+
 body {
-  padding: var(--sp-base);
+  padding: var(--sp-lg);
 }
 
 .product h4 {
@@ -79,8 +84,8 @@ a svg,
     display: block;
   }
 
-  body {
-    padding: var(--sp-4xl);
+  main {
+    /* padding: var(--sp-4xl); */
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
@@ -91,7 +96,7 @@ a svg,
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  body {
+  main {
     display: grid;
     grid-template-columns: 1fr 4fr;
   }
