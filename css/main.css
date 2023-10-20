@@ -117,3 +117,7 @@ button {
 .promo-card small {
   margin-bottom: 0;
 }
+svg{
+  width: var(--sp-2xl);
+
+}
