@@ -1,23 +1,21 @@
-#hero {
-    margin: 0 auto; 
-    text-align: center; 
+@import url("../variables.css");
+
+.hero, .more-stuff {
+    padding: var(--sp-lg);
 }
-
-
-
 
 .hero{
     display: block;
     margin-top: 5rem;
+    text-align: center;
 }
-
 
 .small-header{
     font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     /* font-size: clamp(1rem, 4vw,8rem); */
-    font-size: clamp(1rem,4vw,8rem);
+    font-size: clamp(3rem,4vw,8rem);
 
 
 
