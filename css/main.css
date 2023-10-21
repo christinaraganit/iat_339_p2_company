@@ -57,6 +57,38 @@ a img:hover {
   scale: 1.025;
 }
 
+.checkbox-with-label {
+  display: flex;
+  gap: var(--sp-xs);
+  margin-bottom: var(--sp-xs);
+}
+
+.checkbox-with-label:first-of-type {
+  margin-top: var(--sp-sm);
+}
+
 input[type="checkbox"] {
-  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  color: var(--text-primary);
+  width: var(--sp-lg);
+  height: var(--sp-lg);
+  border: 1px solid var(--text-primary);
+  transform: translateY(-0.075em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]::before {
+  width: var(--sp-sm);
+  height: var(--sp-sm);
+  background-color: var(--primary-500);
+}
+
+input[type="checkbox"]:checked {
+  border-color: var(--primary-500);
+  background: url("../img/icons/check.svg"), var(--primary-500);
 }
