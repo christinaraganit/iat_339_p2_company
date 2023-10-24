@@ -20,7 +20,7 @@
 
 .primary-nav{
     display: flex;
-    gap: 3rem;
+    gap: var(--sp-lg);
     list-style: none;
     padding:0;
     margin:0;
@@ -30,7 +30,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;
+    gap: var(--sp-lg);
     align-items: center;
     }
 
@@ -49,7 +49,7 @@ input {
 nav a{
     font-stretch: condensed;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     text-decoration: none;
 
 }

@@ -61,6 +61,10 @@ main {
   display: none;
 }
 
+#filters .label {
+  margin-top: var(--sp-lg);
+}
+
 @media screen and (min-width: 25.653rem) {
   #products-grid {
     grid-template-columns: 1fr 1fr;

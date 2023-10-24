@@ -1,4 +1,4 @@
-@import url("/css/variables.css");
+@import url("./css/variables.css");
 
 * {
   box-sizing: border-box;
@@ -85,12 +85,12 @@ input[type="checkbox"] {
 input[type="checkbox"]::before {
   width: var(--sp-sm);
   height: var(--sp-sm);
-  background-color: var(--primary-500);
+  background-color: var(--text-primary);
 }
 
 input[type="checkbox"]:checked {
-  border-color: var(--primary-500);
-  background: url("../img/icons/check.svg"), var(--primary-500);
+  border-color: var(--text-primary);
+  background: url("../img/icons/check.svg"), var(--text-primary);
 }
 
 a {
