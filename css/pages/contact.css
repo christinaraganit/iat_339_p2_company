@@ -1,0 +1,156 @@
+@import url("../variables.css");
+body{
+    background-color: #171717;
+}
+section{
+    margin-top: var(--sp-7xl);
+}
+
+
+.contact-form{
+    display: grid;
+    gap: var(--sp-7xl);
+}
+main {
+  padding: var(--sp-5xl);
+}
+
+.contact-info h5{
+    text-transform: uppercase;
+    opacity: 60%;
+}
+
+
+#main-info > * {
+  margin-bottom: 0;
+}
+
+.title{
+    font-size: clamp(5rem, 20vw + 1rem ,10rem);
+    margin-bottom: var(--sp-5xl);
+
+}
+
+input::placeholder{
+    text-transform: uppercase;
+
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-5xl);
+    font-size: .8rem;
+}
+.contact-info ul{
+    color: rgb(219, 219, 219);
+    list-style: square;
+    padding: 0;
+    margin:0;
+}
+textarea{
+    width: 100%;
+    background-color: rgb(57, 57, 57);
+    border-style: none;
+    color:white;
+
+}
+.accordion-container{
+    border: solid white;
+    border-width: 1px 0;
+    padding-top: var(--sp-xs);
+
+}
+
+.accordion{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+
+}
+
+/* styling for arrow */
+.accordion::after{
+    display: inline-block;
+    content: "\203A" ;
+
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    transition: transform .2s ease-in;
+
+
+}
+.active{
+    font-weight: bold;
+}
+
+.active::after{
+    transform: rotate(90deg);
+}
+
+.panel{
+    margin: var(--sp-xs) 0;
+    max-height: 0;
+    overflow: hidden;
+    transition:0.4s cubic-bezier(0.63,-0.01, 0.19, 1.01) max-height 0s;
+    /* background-color: red; */
+}
+.faq{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+
+@media screen and (min-width: 50rem) {
+    .contact-form{
+        grid-template-columns: 1fr 1fr;
+        gap: var(--sp-5xl);
+    }
+
+    .contact-form{
+        grid-column: 1;
+    }
+
+    .title{
+        font-size: clamp(5rem, 20vw + 1rem ,10rem);
+        margin-bottom: var(--sp-6xl);
+    
+    }
+
+
+    .contact-info{
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
+
+        /* padding:0 10rem */
+
+    }
+    .map{
+        max-width: 100%;
+    }
+    .faq{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-column: span 2; */
+        gap: 1rem 2rem;
+    }
+    .faq h2{
+        grid-column: span 2;
+    }
+
+
+}
+
+
+

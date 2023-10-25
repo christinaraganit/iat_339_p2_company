@@ -1,62 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/pages/landing.css" />
+    <link rel="stylesheet" href="./css/pages/contact.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
 
     <script src="/js/nav.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="primary-header flex">
+      <h3 class="justify-start"><a class="logo" href="">Dayside</a></h3>
+
+      <div class="icon"><img src="img/icons/search.svg" alt="" /></div>
+      <div class="icon"><img src="img/icons/bag.svg" alt="" /></div>
+      <button class="mobile-nav-toggle"></button>
+
+      <nav>
+        <ul data-visible="false" class="primary-nav">
+          <li><a href="landing.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
+      <h1 class="title">contact us</h1>
+      <section class="contact-form">
+        <form action="#" method="post">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          /><br /><br />
 
-        <header class="primary-header flex">
-            
+          <input
+            type="text"
+            id="orderNumber"
+            name="orderNumber"
+            placeholder="Order Number"
+          /><br /><br />
 
-            <button class="mobile-nav-toggle"></button>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br /><br />
 
-            <nav id="left-buttons">
-                <ul id="primary-nav-right" class="secondary-nav">
-                    <label for="search"><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg></a>
-                      </label>
-                    <!-- <input type="text"> -->
-                    <li><a href="">            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg></a></li>
-                    <li>
-                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                      </svg>
-                      </a>
-                    </li>
-                </ul>
-            </nav>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Message"
+            required
+          ></textarea
+          ><br /><br />
 
-            <nav id="right-buttons">
-                <ul id="primary-nav-left" data-visible="false" class="primary-nav">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="shop.html">SHOP</a></li>
-                </ul>
-            </nav>
+          <button>SUBMIT</button>
+        </form>
 
-           
-        </header>
+          <img class="map" src="img/map.jpg" alt="dsfsd" width="10" height="10" />
+        </section>
+      <section class="contact-info">
+        <div>
+          <h5>Hours</h5>
 
-
+          <ul>
+            <li>Monday to Friday: 9:00 AM - 6:00 PM PST</li>
+            <li>Saturday: 10:00 AM - 4:00 PM PST</li>
+            <li>Closed on Sundays and holidays</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Address</h5>
+          <ul>
+            <li>1234 Fashion Avenue Vancouver, BC V1X 2Y3, Canada</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <ul>
+            <li>Phone +1 (123) 456-7890</li>
+            <li>General Inquiries: contact@daysideclothing.com</li>
+            <li>Sales: sales@daysideclothing.com</li>
+            <li>Partnerships: partnerships@daysideclothing.com</li>
+            <li>Press Inquiries: press@daysideclothing.com</li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="accordion-container">
+          <button class="accordion">
+            CAN I MAKE MODIFICATIONS TO MY ORDER AFTER ITS BEEN PLACED?
+          </button>
+          <div class="panel">
+            This is just some filler text This is just some filler text This is
+            just some filler text This is just some filler text This is just
+            some filler text This is
+          </div>
+        </div>
+        <div class="accordion-container">
+            <button class="accordion">
+                I USED THE INCORRECT ADDRESS. HOW CAN I UPDATE IT?
+            </button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This is
+              just some filler text This is just some filler text This is just
+              some filler text This is
+            </div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">
+                HOW DO I START A RETURN?
+            </button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This is
+              just some filler text This is just some filler text This is just
+              some filler text This is
+            </div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">
+                DO YOU SHIP INTERNATIONALLY?
+            </button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This is
+              just some filler text This is just some filler text This is just
+              some filler text This is
+            </div>
+          </div>
+      </section>
     </main>
-
-
-
-    
-</body>
+  </body>
+  <script src="js/accordion.js"></script>
 </html>
