@@ -107,6 +107,7 @@ a.tertiary {
 
 button {
   font-size: 0.875rem;
+    border-style: none;
 }
 
 .btn-group {
