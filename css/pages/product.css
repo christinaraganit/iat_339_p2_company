@@ -26,11 +26,26 @@ a {
   margin-bottom: var(--sp-lg);
 }
 
-#reviews-info {
+.reviews-info {
   display: flex;
   align-items: center;
   gap: var(--sp-sm);
   margin-bottom: var(--sp-2xl);
+}
+
+#reviews {
+  width: 100%;
+}
+
+#review-stats {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-info small,
+#review-stats h3 {
+  margin-bottom: 0;
 }
 
 #rating svg {
@@ -60,6 +75,31 @@ a.primary {
   margin-top: var(--sp-2xl);
   display: grid;
   gap: var(--sp-base);
+}
+
+.number-with-star svg {
+  width: var(--sp-lg);
+}
+
+.number-with-star {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2xs);
+}
+
+.review-bar-complete {
+  height: var(--sp-base);
+  width: 100%;
+  background-color: var(--zinc-500);
+}
+
+.review-bar {
+  height: 100%;
+  background-color: var(--zinc-700);
+}
+
+.w-90 {
+  width: 90%;
 }
 
 @media screen and (min-width: 48rem) {
