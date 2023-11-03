@@ -20,9 +20,9 @@ a:hover {
 }
 
 a.primary {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
   background-color: var(--primary-500);
   text-decoration: none;
-  font-stretch: condensed;
   font-size: 1.0625rem;
   line-height: 1.4375rem;
   font-weight: 500;
@@ -31,6 +31,7 @@ a.primary {
   display: inline-flex;
   gap: var(--sp-2xs);
   transition: background-color 0.25s;
+  justify-content: center;
 }
 
 a.primary:hover {
@@ -107,7 +108,7 @@ a.tertiary {
 
 button {
   font-size: 0.875rem;
-    border-style: none;
+  border-style: none;
 }
 
 .btn-group {
@@ -150,7 +151,6 @@ button {
 .promo-card small {
   margin-bottom: 0;
 }
-svg{
+svg {
   width: var(--sp-2xl);
-
 }
