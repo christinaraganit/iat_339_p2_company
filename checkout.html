@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/pages/checkout.css" />
+    <script src="./js/nav.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="input-info">
+        <h1>Checkout</h1>
+        <div class="input-group">
+          <h2>Contact information</h2>
+          <div class="input">
+            <label for="email"><small>Email</small></label>
+            <input type="email" id="email" name="email" />
+          </div>
+        </div>
+        <div class="input-group">
+          <h2>Shipping information</h2>
+          <div class="input-2-col">
+            <div class="input">
+              <label for="fname"><small>First name</small></label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+            <div class="input">
+              <label for="lname"><small>Last name</small></label>
+              <input type="text" id="lname" name="lname" />
+            </div>
+          </div>
+          <div class="input">
+            <label for="address"><small>Address</small></label>
+            <input type="text" id="address" name="address" />
+          </div>
+          <div class="input">
+            <label for="apartment"><small>Apartment, suite, etc.</small></label>
+            <input type="text" id="apartment" name="apartment" />
+          </div>
+          <div class="input">
+            <label for="city"><small>City</small></label>
+            <input type="text" id="city" name="city" />
+          </div>
+          <div class="input">
+            <label for="country"><small>Country</small></label>
+            <select id="country" name="country">
+              <option value="Canada">Canada</option>
+              <option value="UnitedStates">United States</option>
+              <option value="Mexico">Mexico</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="state"><small>State or province</small></label>
+            <input type="text" id="state" name="state" />
+          </div>
+          <div class="input">
+            <label for="postalcode"><small>Postal code</small></label>
+            <input type="text" id="postalcode" name="postalcode" />
+          </div>
+          <div class="input">
+            <label for="postalcode"><small>Phone number</small></label>
+            <input type="number" id="postalcode" name="postalcode" />
+          </div>
+        </div>
+      </section>
+
+      <section id="order-summary">
+        <div>
+          <h2>Order summary</h2>
+
+          <div class="product">
+            <div class="product-img">
+              <img src="./img/mockup.png" alt="Ocean Avenue Lyrics T-Shirt" />
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h5>Ocean Avenue Lyrics T-Shirt</h5>
+                <span>Large</span>
+                <em>$32.00</em>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="./img/mockup.png" alt="Ocean Avenue Lyrics T-Shirt" />
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h5>Ocean Avenue Lyrics T-Shirt</h5>
+                <span>Large</span>
+                <em>$32.00</em>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-img">
+              <img src="./img/mockup.png" alt="Ocean Avenue Lyrics T-Shirt" />
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h5>Ocean Avenue Lyrics T-Shirt</h5>
+                <span>Large</span>
+                <em>$32.00</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

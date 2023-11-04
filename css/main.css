@@ -154,3 +154,34 @@ button {
 svg {
   width: var(--sp-2xl);
 }
+
+div.input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-xs);
+  margin-top: var(--sp-xs);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  all: unset;
+  padding: var(--sp-2xs);
+  transition: outline 0.25s, background-color 0.125s;
+  outline: 1px solid var(--zinc-700);
+  background-color: var(--zinc-800);
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover {
+  background-color: var(--zinc-700);
+  outline: 1px solid var(--zinc-500);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  background-color: var(--zinc-700);
+  outline: 1px solid var(--primary-500);
+}

@@ -1,0 +1,148 @@
+@import url(../variables.css);
+
+main h2 {
+  font-size: 2.125rem;
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+  letter-spacing: 0.015rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-2xl);
+}
+
+body {
+  padding: var(--sp-base);
+}
+
+.product {
+  display: flex;
+  gap: var(--sp-base);
+  padding-top: var(--sp-2xl);
+}
+
+.product-img {
+  width: 40%;
+  max-width: 5em;
+}
+
+.product-info > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.product:first-of-type {
+  padding-top: var(--sp-xs);
+}
+
+.product:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.product-info span,
+.product-info em {
+  color: var(--text-secondary);
+}
+
+.product-info span,
+.product h5 {
+  margin-bottom: var(--sp-xs);
+}
+
+#order-summary {
+  padding: var(--sp-lg);
+  background-color: var(--zinc-800);
+  height: fit-content;
+}
+
+#order-summary a {
+  margin-top: var(--sp-2xl);
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: var(--sp-2xl);
+}
+
+.input-group {
+  padding-top: var(--sp-3xl);
+  padding-bottom: var(--sp-3xl);
+  border-bottom: 1px solid var(--zinc-700);
+}
+
+.input-group label {
+  color: var(--text-secondary);
+}
+
+.input-group h4 {
+  margin-bottom: var(--sp-base);
+}
+
+.input-group .input:not(.input:last-of-type) {
+  margin-bottom: var(--sp-base);
+}
+
+.input-group:first-of-type {
+  padding-top: 0;
+}
+
+.input-group:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 32rem) {
+  .product-img {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+}
+
+@media screen and (min-width: 72rem) {
+  .input-2-col {
+    display: flex;
+    gap: var(--sp-xl);
+  }
+
+  .input-2-col .input {
+    width: calc(50% - (var(--sp-xl) / 2));
+  }
+
+  #input-info {
+    padding-top: var(--sp-5xl);
+  }
+
+  body {
+    padding: 0;
+    margin-left: 15vw;
+  }
+
+  #input-info {
+    width: calc(35vw - var(--sp-4xl));
+    padding: 0;
+    padding-top: var(--sp-4xl);
+    padding-bottom: var(--sp-4xl);
+  }
+
+  #order-summary {
+    background-color: var(--zinc-900);
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    padding: var(--sp-4xl);
+    padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .input-group .input:not(.input:last-of-type) {
+    margin-bottom: var(--sp-xl);
+  }
+}
