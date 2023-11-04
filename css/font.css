@@ -19,6 +19,7 @@ h4 {
   font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: var(--sp-xs);
+  line-height: 80%;
 }
 
 h1,
@@ -43,7 +44,6 @@ ol {
 
 h1 {
   font-size: 4.9375rem;
-  line-height: 6.25rem;
 }
 
 h1.large {
@@ -52,7 +52,7 @@ h1.large {
 
 h2 {
   font-size: 3.8125rem;
-  line-height: 90%;
+  margin-bottom: var(--sp-lg);
 }
 
 h3 {
@@ -112,6 +112,11 @@ small {
 .mango-grotesque {
   font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
 }
 
 code {

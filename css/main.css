@@ -1,4 +1,4 @@
-@import url("/css/variables.css");
+@import url("./css/variables.css");
 
 * {
   box-sizing: border-box;
@@ -20,9 +20,9 @@ a:hover {
 }
 
 a.primary {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
   background-color: var(--primary-500);
   text-decoration: none;
-  font-stretch: condensed;
   font-size: 1.0625rem;
   line-height: 1.4375rem;
   font-weight: 500;
@@ -31,6 +31,7 @@ a.primary {
   display: inline-flex;
   gap: var(--sp-2xs);
   transition: background-color 0.25s;
+  justify-content: center;
 }
 
 a.primary:hover {
@@ -57,8 +58,40 @@ a img:hover {
   scale: 1.025;
 }
 
+.checkbox-with-label {
+  display: flex;
+  gap: var(--sp-xs);
+  margin-bottom: var(--sp-xs);
+}
+
+.checkbox-with-label:first-of-type {
+  margin-top: var(--sp-sm);
+}
+
 input[type="checkbox"] {
-  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  margin: 0;
+  color: var(--text-primary);
+  width: var(--sp-lg);
+  height: var(--sp-lg);
+  border: 1px solid var(--text-primary);
+  transform: translateY(-0.075em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]::before {
+  width: var(--sp-sm);
+  height: var(--sp-sm);
+  background-color: var(--text-primary);
+}
+
+input[type="checkbox"]:checked {
+  border-color: var(--text-primary);
+  background: url("../img/icons/check.svg"), var(--text-primary);
 }
 
 a {
@@ -75,6 +108,7 @@ a.tertiary {
 
 button {
   font-size: 0.875rem;
+  border-style: none;
 }
 
 .btn-group {
@@ -116,4 +150,7 @@ button {
 .promo-card p,
 .promo-card small {
   margin-bottom: 0;
+}
+svg {
+  width: var(--sp-2xl);
 }

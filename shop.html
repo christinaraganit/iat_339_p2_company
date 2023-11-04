@@ -8,10 +8,37 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <script src="./js/nav.js" defer></script>
     <title>Shop</title>
   </head>
 
   <body>
+
+    
+        <header class="primary-header flex">
+            
+            <h3 class="justify-start"><a href="">Dayside</a></h3>
+
+            <div class="icon"><img src="img/icons/search.svg" alt=""></div>
+            <div class="icon"><img src="img/icons/bag.svg" alt=""></div>
+            <button class="mobile-nav-toggle"></button>
+ 
+
+            <nav >
+                <ul data-visible="false" class="primary-nav">
+                    <li><a href="landing.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                </ul>
+            </nav>
+
+           
+        </header>
+
+  <main>
+
     <section id="filters">
       <h4>All filters</h4>
       <p class="label">Color</p>
@@ -28,11 +55,20 @@
         <div class="checkbox-with-label">
           <input
             type="checkbox"
-            id="color-black"
+            id="color-white"
             name="color-white"
-            value="Black"
+            value="White"
           />
           <label for="color-white">White</label><br />
+        </div>
+        <div class="checkbox-with-label">
+          <input
+            type="checkbox"
+            id="color-orange"
+            name="color-orange"
+            value="Orange"
+          />
+          <label for="color-orange">Orange</label><br />
         </div>
       </div>
     </section>
@@ -43,7 +79,39 @@
       <section id="products-grid">
         <div class="product">
           <div class="product-img">
-            <a href="#">
+            <a href="product.html">
+              <img
+                src="img/mockup.png"
+                alt="Ocean Avenue Lyrics T-Shirt"
+                width="1080"
+                height="1080"
+            /></a>
+
+            <div class="overlay"></div>
+            <a href="product.html" class="icon-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <h4>Ocean Avenue Lyrics T-Shirt</h4>
+          <h5>$39</h5>
+        </div>
+
+        <div class="product">
+          <div class="product-img">
+            <a href="product.html">
               <img
                 src="img/mockup.png"
                 alt="Ocean Avenue Lyrics T-Shirt"
@@ -75,7 +143,7 @@
 
         <div class="product">
           <div class="product-img">
-            <a href="#">
+            <a href="product.html">
               <img
                 src="img/mockup.png"
                 alt="Ocean Avenue Lyrics T-Shirt"
@@ -84,7 +152,7 @@
             /></a>
 
             <div class="overlay"></div>
-            <a href="#" class="icon-button">
+            <a href="product.html" class="icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -107,7 +175,7 @@
 
         <div class="product">
           <div class="product-img">
-            <a href="#">
+            <a href="product.html">
               <img
                 src="img/mockup.png"
                 alt="Ocean Avenue Lyrics T-Shirt"
@@ -116,39 +184,7 @@
             /></a>
 
             <div class="overlay"></div>
-            <a href="#" class="icon-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                />
-              </svg>
-            </a>
-          </div>
-
-          <h4>Ocean Avenue Lyrics T-Shirt</h4>
-          <h5>$39</h5>
-        </div>
-
-        <div class="product">
-          <div class="product-img">
-            <a href="#">
-              <img
-                src="img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                width="1080"
-                height="1080"
-            /></a>
-
-            <div class="overlay"></div>
-            <a href="#" class="icon-button">
+            <a href="product.html" class="icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -170,5 +206,6 @@
         </div>
       </section>
     </section>
+    </main>
   </body>
 </html>
