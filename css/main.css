@@ -23,12 +23,12 @@ a.primary {
   font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
   background-color: var(--primary-500);
   text-decoration: none;
-  font-size: 1.0625rem;
-  line-height: 1.4375rem;
+  font-size: 1.0125rem;
   font-weight: 500;
   color: var(--zinc-950);
   padding: var(--sp-xs) var(--sp-base);
   display: inline-flex;
+  align-items: center;
   gap: var(--sp-2xs);
   transition: background-color 0.25s;
   justify-content: center;
@@ -141,16 +141,11 @@ button {
 
 .promo-card {
   border: 1px solid var(--zinc-700);
-  padding: var(--sp-base);
+  padding: var(--sp-lg);
+  padding-top: var(--sp-2xl);
   text-align: center;
 }
 
-.promo-card h4,
-.promo-card h5,
-.promo-card p,
-.promo-card small {
-  margin-bottom: 0;
-}
 svg {
   width: var(--sp-2xl);
 }

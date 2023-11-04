@@ -1,5 +1,16 @@
 @import url("../variables.css");
 
+main h2 {
+  margin-bottom: var(--sp-sm);
+}
+
+#product-price {
+  font-size: 2.875rem;
+  margin-bottom: 0;
+  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 #product,
 #reviews {
   display: grid;
@@ -7,6 +18,9 @@
 
 main {
   padding: var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5xl);
 }
 
 a {
@@ -20,10 +34,6 @@ a {
 #product-images img:first-of-type {
   max-width: 100%;
   height: auto;
-}
-
-#product-info {
-  max-width: 32rem;
 }
 
 #main-info {
@@ -53,12 +63,15 @@ a {
   margin-bottom: 0;
 }
 
-#rating svg {
+#rating svg,
+.rating svg {
   width: var(--sp-lg);
+  display: block;
 }
 
-#rating svg:not(#rating:first-child) {
-  margin-left: calc(var(--sp-2xs) * -1);
+#rating,
+.rating {
+  display: flex;
 }
 
 #size-label {
@@ -76,35 +89,90 @@ a.primary {
   margin-bottom: var(--sp-base);
 }
 
-#promo-cards {
-  margin-top: var(--sp-2xl);
-  display: grid;
-  gap: var(--sp-base);
-}
-
-.number-with-star svg {
-  width: var(--sp-lg);
-}
-
-.number-with-star {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-2xs);
+.number-with-star,
+.percentage {
+  width: 15%;
 }
 
 .review-bar-complete {
   height: var(--sp-base);
   width: 100%;
-  background-color: var(--zinc-500);
+  background-color: var(--zinc-700);
 }
 
 .review-bar {
+  width: 70%;
   height: 100%;
-  background-color: var(--zinc-700);
+  background-color: var(--zinc-500);
+}
+
+.percentage {
+  width: var(--sp-4xl);
 }
 
 .w-90 {
   width: 90%;
+}
+
+.w-82 {
+  width: 82%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-5 {
+  width: 7%;
+}
+
+.w-3 {
+  width: 3%;
+}
+
+.w-0 {
+  width: 0%;
+}
+
+.review {
+  display: flex;
+  gap: var(--sp-base);
+  align-items: center;
+}
+
+#reviews-container .review:not(.review:last-of-type) {
+  margin-bottom: var(--sp-sm);
+}
+
+#comments .comment img {
+  max-width: var(--sp-6xl);
+  border-radius: 100%;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-base);
+}
+
+.comment:not(.comment:last-of-type) {
+  margin-bottom: var(--sp-lg);
+}
+
+.commenter-info {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-base);
+}
+
+.commenter-rating {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-xs);
+}
+
+.commenter-rating .name {
+  font-weight: 500;
 }
 
 @media screen and (min-width: 48rem) {
@@ -124,5 +192,12 @@ a.primary {
 
   .btn-group {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  main {
+    padding-top: var(--sp-5xl);
+    padding-bottom: var(--sp-4xl);
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

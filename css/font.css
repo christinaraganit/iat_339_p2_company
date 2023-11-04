@@ -86,8 +86,9 @@ p.label {
 }
 
 p {
-  line-height: 175%;
+  line-height: 150%;
   margin-bottom: var(--sp-xl);
+  max-width: 32rem;
 }
 
 p.label.orange {
@@ -117,6 +118,10 @@ small {
 em {
   font-style: normal;
   font-weight: bold;
+}
+
+.text-lg {
+  font-size: 1.125rem;
 }
 
 code {
