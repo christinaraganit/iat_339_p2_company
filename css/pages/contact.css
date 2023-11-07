@@ -1,33 +1,12 @@
 @import url("../variables.css");
 
-section{
-    margin-top: var(--sp-7xl);
-}
-
-
-.contact-form{
-    display: grid;
-}
 main {
-  padding: var(--sp-5xl);
-}
+    padding: var(--sp-6xl);
+    overflow: hidden;
+  }
 
-.contact-info h2{
-    font-family: "Hubot Sans";
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-transform: uppercase;
-
-}
-
-a.primary{
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-
-#main-info > * {
-  margin-bottom: 0;
+section{
+    margin-top: var(--sp-4xl);
 }
 
 .title{
@@ -36,9 +15,41 @@ a.primary{
 
 }
 
-input::placeholder{
+.contact-form{
+    display: grid;
+    gap: var(--sp-5xl);
+}
+
+.contact-form form{
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-xl);
+
+}
+
+.contact-info h2{
+    font-family: "Hubot Sans";
+    font-size: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
 
+}
+
+a.primary{
+    grid-column: 2 / 3;
+}
+
+
+#main-info > * {
+  margin-bottom: 0;
+}
+
+
+
+.poo{
+    height:20rem;
+    background-color:var(--zinc-700);
 }
 
 input{
@@ -52,16 +63,12 @@ input{
 
 
 
-.contact-form form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--sp-xl);
 
-}
 .form-info{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    text-transform: uppercase;
 }
 
 #message{
@@ -71,7 +78,7 @@ input{
 .contact-info{
     display: flex;
     flex-direction: column;
-    gap: var(--sp-6xl);
+    gap: var(--sp-4xl);
 
     /* align-items: flex-end; */
 
@@ -131,20 +138,32 @@ textarea{
     transition:0.4s cubic-bezier(0.63,-0.01, 0.19, 1.01) max-height 0s;
     /* background-color: red; */
 }
-.faq{
 
+.temp h2{
+    font-size: clamp(1rem, 20vw ,7rem);
+    line-height: 90%;
+}
+
+@media screen and (min-width: 55rem) {
+    .contact-form{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .contact-info{
+        margin-left: var(--sp-6xl)
+    }
 
 }
 
-/* desktop  */
-@media screen and (min-width: 50rem) {
-    .contact-form{
-        grid-template-columns: 1fr 1fr;
-        gap: var(--sp-5xl);
-    }
+/* desktop @ 30 rem  */
+@media screen and (min-width: 30rem) {
 
-    .contact-form{
-        grid-column: 1;
+
+    .contact-form form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--sp-xl);
+    
     }
 
     .title{
@@ -156,22 +175,16 @@ textarea{
     .temp{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         gap: var(--sp-8xl);
     }
 
 
     .contact-info{
-    padding-left: var(--sp-8xl);
 
 
     }
     .map{
         max-width: 100%;
-    }
-    .faq{
-        max-width: 50vw;
-
     }
 
 

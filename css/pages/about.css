@@ -3,9 +3,7 @@ section{
 }
 
 .about{
-    position: sticky;
-    top: 9rem;
-    z-index: 1;
+
 }
 
 
@@ -13,9 +11,6 @@ section{
     padding-left: var(--sp-5xl);
 }
 .story{
-    background-color: var(--zinc-950);
-    position: relative;
-    z-index: 2;
 
 }
 
