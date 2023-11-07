@@ -7,6 +7,10 @@
 .primary-header{
     justify-content: flex-end;
     padding: var(--sp-lg);
+    position: sticky;
+    top:0;
+    background-color: var(--zinc-950);
+    z-index: 100000;
 }
 .primary-header h3 a{
     font-size: 3rem;
@@ -22,6 +26,7 @@
 }
 
 .primary-nav{
+
     display: flex;
     gap: var(--sp-lg);
     list-style: none;
@@ -33,13 +38,13 @@
     display: none;
 }
 
-input {
+/* input {
     border: none; 
     outline: none; 
     background: none; 
     border-bottom: 1px solid white; 
     color: white;
-}
+} */
 
 nav a{
     text-transform: uppercase;
@@ -51,7 +56,7 @@ nav a{
 }
 
 
-
+/* mobile nav styling */
 @media(max-width:42rem){
     .primary-header{
 

@@ -1,0 +1,39 @@
+
+section{
+}
+
+.about{
+    position: sticky;
+    top: 9rem;
+    z-index: 1;
+}
+
+
+.about,.story{
+    padding-left: var(--sp-5xl);
+}
+.story{
+    background-color: var(--zinc-950);
+    position: relative;
+    z-index: 2;
+
+}
+
+.title, .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about p{
+    max-width: 28rem
+}
+
+h1{
+    font-size: clamp(3rem, 20vw ,10rem);
+    line-height: normal;
+}
+section img{
+    max-width: 40%;
+}
+

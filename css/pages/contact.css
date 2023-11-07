@@ -1,7 +1,5 @@
 @import url("../variables.css");
-body{
-    background-color: #171717;
-}
+
 section{
     margin-top: var(--sp-7xl);
 }
@@ -20,6 +18,11 @@ main {
     opacity: 60%;
 }
 
+a.primary{
+    justify-content: center;
+    text-transform: uppercase;
+}
+
 
 #main-info > * {
   margin-bottom: 0;
@@ -36,10 +39,11 @@ input::placeholder{
 
 }
 
+
 .contact-form form{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: var(--sp-5xl);
 
 }
 .contact-info{
