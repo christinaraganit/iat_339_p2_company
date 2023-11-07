@@ -17,8 +17,8 @@
     <header class="primary-header flex">
       <h3 class="justify-start"><a class="logo" href="">Dayside</a></h3>
 
-      <div class="icon"><img src="img/icons/search.svg" alt="" /></div>
-      <div class="icon"><img src="img/icons/bag.svg" alt="" /></div>
+      <!-- <div class="icon"><img src="img/icons/search.svg" alt="" /></div>
+      <div class="icon"><img src="img/icons/bag.svg" alt="" /></div> -->
       <button class="mobile-nav-toggle"></button>
 
       <nav>
@@ -35,120 +35,106 @@
       <h1 class="title">contact us</h1>
       <section class="contact-form">
         <form action="#" method="post">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            required
-          />
+          <div class="form-info">
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-          <input
-            type="text"
-            id="orderNumber"
-            name="orderNumber"
-            placeholder="Order Number"
-          />
+          <div class="form-info">
+            <label for="orderNumber">Order Number</label>
+            <input type="text" id="orderNumber" name="orderNumber" />
+          </div>
+          <div class="form-info">
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-info">
+            <label for="Phone">Phone</label>
+            <input type="text" id="phone" name="Phone" required />
+          </div>
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
+          <div class="form-info" id="message">
+            <label for="Message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
 
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            placeholder="Message"
-            required
-          ></textarea
-          >
+
 
           <a href="" class="primary"> Submit Ticket</a>
         </form>
 
-          <img class="map" src="img/map.jpg" alt="dsfsd" width="10" height="10" />
-        </section>
+        <div class="contact-info">
+          <div>
+            <h2>Hours</h2>
 
-        <section class="temp">
-          <div class="contact-info">
-            <div>
-              <h2>Hours</h2>
-    
-              <ul>
-                <li>Monday to Friday: 9:00 AM - 6:00 PM PST</li>
-                <li>Saturday: 10:00 AM - 4:00 PM PST</li>
-                <li>Closed on Sundays and holidays</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Address</h2>
-              <ul>
-                <li>1234 Fashion Avenue Vancouver, BC V1X 2Y3, Canada</li>
-              </ul>
-            </div>
-            <div>
-              <h2>Support</h2>
-              <ul>
-                <li>Phone +1 (123) 456-7890</li>
-                <li>General Inquiries: contact@daysideclothing.com</li>
-                <li>Sales: sales@daysideclothing.com</li>
-              </ul>
+            <ul>
+              <li>Monday to Friday: 9:00 AM - 6:00 PM PST</li>
+              <li>Saturday: 10:00 AM - 4:00 PM PST</li>
+              <li>Closed on Sundays and holidays</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Address</h2>
+            <ul>
+              <li>1234 Fashion Avenue Vancouver, BC V1X 2Y3, Canada</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <ul>
+              <li>Phone +1 (123) 456-7890</li>
+              <li>General Inquiries: contact@daysideclothing.com</li>
+              <li>Sales: sales@daysideclothing.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <img class="map" src="img/map.jpg" alt="dsfsd" width="10" height="10" /> -->
+      </section>
+
+      <section class="temp">
+      
+
+        <div class="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="accordion-container">
+            <button class="accordion">
+              CAN I MAKE MODIFICATIONS TO MY ORDER AFTER ITS BEEN PLACED?
+            </button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This
+              is just some filler text This is just some filler text This is
+              just some filler text This is
             </div>
           </div>
-    
-    
-          <div class="faq">
-            <h2>Frequently asked questions</h2>
-            <div class="accordion-container">
-              <button class="accordion">
-                CAN I MAKE MODIFICATIONS TO MY ORDER AFTER ITS BEEN PLACED?
-              </button>
-              <div class="panel">
-                This is just some filler text This is just some filler text This is
-                just some filler text This is just some filler text This is just
-                some filler text This is
-              </div>
+          <div class="accordion-container">
+            <button class="accordion">
+              I USED THE INCORRECT ADDRESS. HOW CAN I UPDATE IT?
+            </button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This
+              is just some filler text This is just some filler text This is
+              just some filler text This is
             </div>
-            <div class="accordion-container">
-                <button class="accordion">
-                    I USED THE INCORRECT ADDRESS. HOW CAN I UPDATE IT?
-                </button>
-                <div class="panel">
-                  This is just some filler text This is just some filler text This is
-                  just some filler text This is just some filler text This is just
-                  some filler text This is
-                </div>
-              </div>
-              <div class="accordion-container">
-                <button class="accordion">
-                    HOW DO I START A RETURN?
-                </button>
-                <div class="panel">
-                  This is just some filler text This is just some filler text This is
-                  just some filler text This is just some filler text This is just
-                  some filler text This is
-                </div>
-              </div>
-              <div class="accordion-container">
-                <button class="accordion">
-                    DO YOU SHIP INTERNATIONALLY?
-                </button>
-                <div class="panel">
-                  This is just some filler text This is just some filler text This is
-                  just some filler text This is just some filler text This is just
-                  some filler text This is
-                </div>
-              </div>
           </div>
-        </section>
-
-
-
+          <div class="accordion-container">
+            <button class="accordion">HOW DO I START A RETURN?</button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This
+              is just some filler text This is just some filler text This is
+              just some filler text This is
+            </div>
+          </div>
+          <div class="accordion-container">
+            <button class="accordion">DO YOU SHIP INTERNATIONALLY?</button>
+            <div class="panel">
+              This is just some filler text This is just some filler text This
+              is just some filler text This is just some filler text This is
+              just some filler text This is
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="js/accordion.js"></script>
