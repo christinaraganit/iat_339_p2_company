@@ -19,18 +19,28 @@ section img{
     max-width: 100%;
 }
 
+/* .dev-container{
+    position: relative;
+    background-color: red;
+} */
+
 .developer{
     display: grid;
     grid-template-columns: 1fr;
+    opacity: 1;
+    transition: 1s;
+
 }
 
-.options{
+.button-container{
+    text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: var(--sp-8xl);
     margin: var(--sp-7xl) 0;
-    /* outline: solid 1px white; */
+    cursor: pointer;
+
    
 }
 
@@ -45,6 +55,13 @@ section img{
     gap: 2rem;
 }
 
+
+
+.hide{
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+}
 
 
 .dev-name h2{
@@ -62,19 +79,30 @@ section img{
 }
 
 
+
 /* desktop view at 900px */
 @media screen and (min-width: 55rem) {
     main{
         /* padding: 0 10rem; */
-        margin: 0 10rem;
+        margin: 0 5rem;
 
     }
+    .dev-container{
+        position: relative;
+        min-height: 50rem;
+    }
+
 
     .developer{
         grid-template-columns: 1fr 1.5fr;
         column-gap:var(--sp-6xl);
         row-gap:var(--sp-6xl);
+        position: absolute;
+        width: 100%;
 
+
+
+  
 
     }
 
