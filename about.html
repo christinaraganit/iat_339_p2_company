@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/navbar.css" />
 
     <script src="./js/nav.js" defer></script>
+    <script src="./js/about.js" defer></script>
   </head>
   <body>
     <header class="primary-header flex">
@@ -50,62 +51,83 @@
         </div>
       </section>
 
-      <section class="story">
-        <div class="title">
-          <h1>Our Story</h1>
-        </div>
-        <p>
-          Dayside was founded by a group of passionate individuals who shared a
-          common vision: to create a brand that resonates with the essence of
-          the city we’re from. Our journey began with the idea that fashion
-          should be more than just a trend; it should be a way of life. Inspired
-          by the simplicity and elegance of nature, we set out to create a brand
-          that celebrates the culture that defines it.
-        </p>
-
-        <img src="img/gastown.jpg" alt="Picture of Gastown, Vancouver" />
-      </section>
-
       <section class="team">
         <div class="title">
           <h1>Meet the Team</h1>
         </div>
 
-        <div class="options">
-          <a href="">Michael Dresler</a>
-          <a href="">Christina Raganit</a>
+        <div class="button-container">
+          <a class="dev-button" id="btn-michael">Michael <br> Dresler</a>
+          <a class="dev-button" id="btn-christina">Christina <br>Raganit</a>
         </div>
-        <div class="developer">
-          <div class="dev-name">
-            <h2>
-              Michael <br />
-              Dresler
-            </h2>
-            <h3 class="dev-title">web developer</h3>
-            <!-- <h2>Dresler</h2> -->
-          </div>
-          <div class="dev-photo">
-            <img src="img/Michael.png" alt="Picture of Michael" />
+        <div class="dev-container">
+          <div class="developer" id="michael-bio">
+            <div class="dev-name">
+              <h2>
+                Michael <br />
+                Dresler
+              </h2>
+              <h3 class="dev-title">web developer</h3>
+              <!-- <h2>Dresler</h2> -->
+            </div>
+            <div class="dev-photo">
+              <img src="img/Michael.png" alt="Picture of Michael" />
+            </div>
+
+            <div class="dev-bio">
+              <p>
+                Michael is a second-year student at Simon Fraser University's
+                School of Interactive Art and Technology, with a primary focus
+                in design. Currently, Michael is dedicated to enhancing his
+                expertise in design and motion graphics to further their
+                proficiency in interaction design. Proficient in software tools
+                such as Adobe After Effects and Figma, Michael combines
+                technical skills with a strong commitment to his field.
+              </p>
+            </div>
+
+            <div class="dev-contact">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/michael-dresler-610146200/">LinkedIn</a></li>
+                <li><a href="https://github.com/michaeldresler">Github</a></li>
+                <li><a href="mailto:michaeldresler@hotmail.com">Email</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="dev-bio">
-            <p>
-              Michael is a second-year student at Simon Fraser University's
-              School of Interactive Art and Technology, with a primary focus in
-              design. Currently, Michael is dedicated to enhancing his expertise
-              in design and motion graphics to further their proficiency in
-              interaction design. Proficient in software tools such as Adobe
-              After Effects and Figma, Michael combines technical skills with a
-              strong commitment to his field.
-            </p>
-          </div>
+          <div class="developer hide" id="christina-bio">
+            <div class="dev-name">
+              <h2>
+                Christina <br />
+                Raganit
+              </h2>
+              <h3 class="dev-title">web developer</h3>
+            </div>
+            <div class="dev-photo">
+              <img src="img/christina.png" alt="Picture of Christina" />
+            </div>
 
-          <div class="dev-contact">
-            <ul>
-              <li><a href="">LinkedIn</a></li>
-              <li><a href="">Github</a></li>
-              <li><a href="">Email</a></li>
-            </ul>
+            <div class="dev-bio">
+              <p>
+                A second-year student at Simon Fraser University's School of
+                Interactive Art and Technology, Christina is immersed in the
+                realm of design. Her concentration lies in design and she is
+                committed to expanding her expertise in these areas. Proficient
+                in software tools photoshop, Figma, VS Code and more. Notably,
+                Christina is distinguished by her competitive spirit,
+                consistently striving to clinch victories in hackathons, a
+                testament to her unwavering determination and commitment to
+                success.
+              </p>
+            </div>
+
+            <div class="dev-contact">
+              <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Github</a></li>
+                <li><a href="">Email</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
