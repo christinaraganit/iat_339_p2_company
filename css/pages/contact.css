@@ -1,7 +1,7 @@
 @import url("../variables.css");
 
 main {
-    padding: var(--sp-6xl);
+    padding: var(--sp-xl);
     overflow: hidden;
   }
 
@@ -145,6 +145,10 @@ textarea{
 }
 
 @media screen and (min-width: 55rem) {
+
+    main{
+        padding: var(--sp-6xl);
+    }
     .contact-form{
         grid-template-columns: 3fr 2fr;
     }
@@ -155,8 +159,8 @@ textarea{
 
 }
 
-/* desktop @ 30 rem  */
-@media screen and (min-width: 30rem) {
+/* desktop @ 32 rem  */
+@media screen and (min-width: 32rem) {
 
 
     .contact-form form{
@@ -179,10 +183,6 @@ textarea{
     }
 
 
-    .contact-info{
-
-
-    }
     .map{
         max-width: 100%;
     }
