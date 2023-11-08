@@ -7,6 +7,8 @@
 .primary-header {
   justify-content: flex-end;
   padding: var(--sp-lg);
+  padding-left: var(--sp-2xl);
+  padding-right: var(--sp-2xl);
   position: sticky;
   top: 0;
   background-color: var(--zinc-950);
