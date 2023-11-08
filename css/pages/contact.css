@@ -1,23 +1,43 @@
 @import url("../variables.css");
-body{
-    background-color: #171717;
-}
+
+main {
+    padding: var(--sp-xl);
+    overflow: hidden;
+  }
+
 section{
-    margin-top: var(--sp-7xl);
+    margin-top: var(--sp-4xl);
 }
 
+.title{
+    font-size: clamp(5rem, 20vw + 1rem ,10rem);
+
+
+}
 
 .contact-form{
     display: grid;
-    gap: var(--sp-7xl);
-}
-main {
-  padding: var(--sp-5xl);
+    gap: var(--sp-5xl);
 }
 
-.contact-info h5{
+.contact-form form{
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-xl);
+
+}
+
+.contact-info h2{
+    font-family: "Hubot Sans";
+    font-size: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
-    opacity: 60%;
+
+}
+
+a.primary{
+    grid-column: 2 / 3;
 }
 
 
@@ -25,32 +45,47 @@ main {
   margin-bottom: 0;
 }
 
-.title{
-    font-size: clamp(5rem, 20vw + 1rem ,10rem);
-    margin-bottom: var(--sp-5xl);
+
+
+.poo{
+    height:20rem;
+    background-color:var(--zinc-700);
+}
+
+input{
+    all: unset;
+    padding: var(--sp-2xs);
+    transition: outline 0.25s, background-color 0.125s;
+    outline: 1px solid var(--zinc-700);
+    background-color: var(--zinc-800);
 
 }
 
-input::placeholder{
-    text-transform: uppercase;
 
-}
 
-.contact-form form{
+
+.form-info{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-
+    gap: 1rem;
+    text-transform: uppercase;
 }
+
+#message{
+    grid-column: span 2;
+}
+
 .contact-info{
     display: flex;
     flex-direction: column;
-    gap: var(--sp-5xl);
-    font-size: .8rem;
+    gap: var(--sp-4xl);
+
+    /* align-items: flex-end; */
+
 }
 .contact-info ul{
     color: rgb(219, 219, 219);
-    list-style: square;
+    list-style: none;
     padding: 0;
     margin:0;
 }
@@ -103,50 +138,53 @@ textarea{
     transition:0.4s cubic-bezier(0.63,-0.01, 0.19, 1.01) max-height 0s;
     /* background-color: red; */
 }
-.faq{
-    display: grid;
-    grid-template-columns: 1fr;
+
+.temp h2{
+    font-size: clamp(1rem, 20vw ,7rem);
+    line-height: 90%;
+}
+
+@media screen and (min-width: 55rem) {
+
+    main{
+        padding: var(--sp-6xl);
+    }
+    .contact-form{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .contact-info{
+        margin-left: var(--sp-6xl)
+    }
 
 }
 
+/* desktop @ 32 rem  */
+@media screen and (min-width: 32rem) {
 
-@media screen and (min-width: 50rem) {
-    .contact-form{
+
+    .contact-form form{
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: var(--sp-5xl);
-    }
-
-    .contact-form{
-        grid-column: 1;
+        gap: var(--sp-xl);
+    
     }
 
     .title{
         font-size: clamp(5rem, 20vw + 1rem ,10rem);
-        margin-bottom: var(--sp-6xl);
+
     
     }
 
-
-    .contact-info{
-        grid-column: span 2;
+    .temp{
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        font-size: 1rem;
-
-        /* padding:0 10rem */
-
+        gap: var(--sp-8xl);
     }
+
+
     .map{
         max-width: 100%;
-    }
-    .faq{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        /* grid-column: span 2; */
-        gap: 1rem 2rem;
-    }
-    .faq h2{
-        grid-column: span 2;
     }
 
 
