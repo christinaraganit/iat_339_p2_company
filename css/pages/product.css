@@ -175,6 +175,34 @@ a.primary {
   font-weight: 500;
 }
 
+.btn-group button {
+  cursor: pointer;
+}
+
+#recommended-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: var(--sp-2xl);
+}
+
+#recommended-products .recommended-product h3,
+h4 {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.recommended-product h3 {
+  font-size: 1.25rem;
+  line-height: 90%;
+  margin-top: var(--sp-sm);
+  margin-bottom: var(--sp-sm);
+}
+
+.recommended-product h4 {
+  font-size: 1.125rem;
+}
+
 @media screen and (min-width: 48rem) {
   #product,
   #reviews {

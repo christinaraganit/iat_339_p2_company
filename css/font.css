@@ -15,7 +15,11 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
   font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: var(--sp-xs);
@@ -42,34 +46,41 @@ ol {
   line-height: 1.5;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 4.9375rem;
 }
 
-h1.large {
+h1.large,
+.h1.large {
   font-size: 6.25rem;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 3.8125rem;
   margin-bottom: var(--sp-lg);
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 2.875rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 2.125rem;
 }
 
-h5 {
+h5,
+.h5 {
   font-size: 1.0625rem;
   margin-bottom: var(--sp-sm);
   font-weight: 500;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: 0.875rem;
   margin-bottom: var(--sp-sm);
   font-weight: 600;
