@@ -13,14 +13,21 @@ main {
   text-decoration: none;
   width: var(--sp-5xl);
   height: var(--sp-5xl);
+  color: var(--text-primary);
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 0;
   position: absolute;
   bottom: var(--sp-base);
   right: var(--sp-base);
   z-index: 1;
+}
+
+.icon-button:hover {
+  color: var(--primary-500);
+  cursor: pointer;
 }
 
 .icon-button svg {
@@ -38,7 +45,7 @@ main {
   background-color: var(--zinc-950);
   min-height: 2rem;
   min-width: 2rem;
-  opacity: 0.3;
+  opacity: 0.2;
   transition: opacity 0.5s;
   position: absolute;
   top: 0;
@@ -53,16 +60,10 @@ main {
 }
 
 #products-grid {
+  margin-top: var(--sp-base);
   display: grid;
-  gap: var(--sp-2xl);
-}
-
-#filters {
-  display: none;
-}
-
-#filters .label {
-  margin-top: var(--sp-lg);
+  gap: var(--sp-xl);
+  row-gap: var(--sp-2xl);
 }
 
 .product h2,
@@ -74,8 +75,8 @@ main {
 
 .product h2 {
   font-size: 1.125rem;
-  line-height: 90%;
-  margin-bottom: var(--sp-sm);
+  line-height: 125%;
+  margin-bottom: var(--sp-xs);
 }
 
 .product h3 {
@@ -85,8 +86,6 @@ main {
 @media screen and (min-width: 25.653rem) {
   #products-grid {
     grid-template-columns: 1fr 1fr;
-    row-gap: var(--sp-base);
-    column-gap: var(--sp-xl);
   }
 }
 
