@@ -38,14 +38,6 @@
   display: none;
 }
 
-/* input {
-    border: none; 
-    outline: none; 
-    background: none; 
-    border-bottom: 1px solid white; 
-    color: white;
-} */
-
 nav a,
 footer .links a {
   text-transform: uppercase;
