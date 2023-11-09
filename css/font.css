@@ -16,20 +16,6 @@ h1,
 h2,
 h3,
 h4,
-.h1,
-.h2,
-.h3,
-.h4 {
-  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: var(--sp-xs);
-  line-height: 80%;
-}
-
-h1,
-h2,
-h3,
-h4,
 h5,
 h6,
 p,
@@ -46,58 +32,35 @@ ol {
   line-height: 1.5;
 }
 
-h1,
-.h1 {
-  font-size: 4.9375rem;
-}
-
-h1.large,
-.h1.large {
+.large-title {
   font-size: 6.25rem;
 }
 
-h2,
-.h2 {
+.title-1 {
+  font-size: 4.9375rem;
+}
+
+.title-2 {
   font-size: 3.8125rem;
   margin-bottom: var(--sp-lg);
 }
 
-h3,
-.h3 {
+.title-3 {
   font-size: 2.875rem;
 }
 
-h4,
-.h4 {
+.title-4 {
   font-size: 2.125rem;
 }
 
-h5,
-.h5 {
-  font-size: 1.0625rem;
+.headline {
+  font-size: 1.175rem;
   margin-bottom: var(--sp-sm);
   font-weight: 500;
-}
-
-h6,
-.h6 {
-  font-size: 0.875rem;
-  margin-bottom: var(--sp-sm);
-  font-weight: 600;
-}
-
-p.label {
-  font-stretch: condensed;
-  font-size: 1.0625rem;
-  line-height: 0.9375rem;
-  margin-bottom: var(--sp-xs);
-  font-weight: 500;
-  letter-spacing: 0.0125rem;
-  text-transform: uppercase;
 }
 
 p {
-  line-height: 125%;
+  line-height: 135%;
   margin-bottom: var(--sp-xl);
   max-width: 32rem;
 }
@@ -108,6 +71,7 @@ p.label.orange {
 
 small {
   font-size: 0.875rem;
+  color: var(--text-tertiary);
   line-height: 1.0625rem;
   margin-bottom: var(--sp-base);
 }
@@ -127,7 +91,7 @@ small {
 }
 
 em {
-  font-style: normal;
+  font-style: italic;
   font-weight: bold;
 }
 
@@ -141,4 +105,38 @@ code {
   background-color: var(--zinc-900);
   border: 1px solid var(--zinc-700);
   margin-bottom: var(--sp-xl);
+}
+
+.large-title,
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-xs);
+  line-height: 80%;
+}
+
+.headline {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+}
+
+.callout {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+  font-size: 1.125rem;
+  line-height: 0.9375rem;
+  margin-bottom: var(--sp-sm);
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }

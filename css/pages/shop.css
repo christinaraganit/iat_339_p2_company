@@ -4,20 +4,7 @@ main {
   padding: var(--sp-2xl);
 }
 
-.product h4 {
-  margin-bottom: 0;
-}
-
-.icon-button {
-  background-color: var(--zinc-950);
-  text-decoration: none;
-  width: var(--sp-5xl);
-  height: var(--sp-5xl);
-  color: var(--text-primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.product .icon-button {
   margin: 0;
   position: absolute;
   bottom: var(--sp-base);
@@ -25,12 +12,7 @@ main {
   z-index: 1;
 }
 
-.icon-button:hover {
-  color: var(--primary-500);
-  cursor: pointer;
-}
-
-.icon-button svg {
+.product .icon-button svg {
   width: var(--sp-lg);
   height: auto;
 }
@@ -66,21 +48,14 @@ main {
   row-gap: var(--sp-2xl);
 }
 
-.product h2,
-.product h3 {
-  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
-  text-transform: none;
-  font-weight: normal;
-}
-
 .product h2 {
   font-size: 1.125rem;
   line-height: 125%;
   margin-bottom: var(--sp-xs);
 }
 
-.product h3 {
-  font-size: 1rem;
+.product span {
+  color: var(--text-secondary);
 }
 
 @media screen and (min-width: 25.653rem) {
