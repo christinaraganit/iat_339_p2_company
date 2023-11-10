@@ -31,7 +31,7 @@ nav {
   align-items: center;
 }
 
-ul{
+ul {
   max-width: 100%;
 }
 
@@ -97,7 +97,6 @@ footer .links a {
     /* background-repeat: no-repeat; */
     width: 2rem;
     border: 0;
-    aspect-ratio: 1;
 
     top: var(--sp-lg);
     right: var(--sp-lg);
