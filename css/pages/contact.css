@@ -18,6 +18,10 @@ section {
   gap: var(--sp-5xl);
 }
 
+form ::placeholder{
+  text-transform:initial
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;

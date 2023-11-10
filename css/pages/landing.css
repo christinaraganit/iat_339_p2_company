@@ -70,12 +70,13 @@ section img {
   position: relative;
 }
 .photo-text {
-  letter-spacing: -.3rem;
-  font-size: clamp(1rem, 10vw, 10rem);
+  font-family: "Mango Grotesque";
+
+  font-size: clamp(1rem, 8vw, 10rem);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(250, 113, 136);
+  /* color: rgb(250, 113, 136); */
   /* color: red; */
   position: absolute;
   top: 50%;

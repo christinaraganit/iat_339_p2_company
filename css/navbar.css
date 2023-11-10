@@ -31,6 +31,10 @@ nav {
   align-items: center;
 }
 
+ul{
+  max-width: 100%;
+}
+
 .primary-nav {
   display: flex;
   gap: var(--sp-lg);
