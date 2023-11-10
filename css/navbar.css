@@ -6,7 +6,7 @@
 }
 .primary-header {
   justify-content: flex-end;
-  padding: var(--sp-lg);
+  padding: var(--sp-sm);
   padding-left: var(--sp-2xl);
   padding-right: var(--sp-2xl);
   position: sticky;
