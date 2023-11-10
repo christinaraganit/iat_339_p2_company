@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/pages/checkout.css" />
+    <!-- <link rel="stylesheet" href="./css/pages/checkout.css" /> -->
+
+    <link rel="stylesheet" href="./css/pages/checkout2.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <script src="./js/nav.js" defer></script>
   </head>
@@ -26,141 +28,220 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="cart.html"><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-            />
-          </svg></a></li>
+          <li>
+            <a href="cart.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="input-info">
-        <h1>Checkout</h1>
-        <div class="input-group">
-          <h2>Contact information</h2>
-          <div class="input">
-            <label for="email"><small>Email</small></label>
-            <input type="email" id="email" name="email" />
-          </div>
-        </div>
-        <div class="input-group">
-          <h2>Shipping information</h2>
-          <div class="input-2-col">
+      <h1 class="title-1">Enter details</h1>
+      <section id="content">
+        <section id="forms">
+          <section class="form-group" id="shipping">
+            <h2 class="title-3">Shipping</h2>
             <div class="input">
-              <label for="fname"><small>First name</small></label>
-              <input type="text" id="fname" name="fname" />
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="input-group-2-col">
+              <div class="input">
+                <label for="fname">First name</label>
+                <input type="text" name="fname" id="fname" />
+              </div>
+              <div class="input">
+                <label for="lname">Last name</label>
+                <input type="text" name="lname" id="lname" />
+              </div>
             </div>
             <div class="input">
-              <label for="lname"><small>Last name</small></label>
-              <input type="text" id="lname" name="lname" />
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address" />
             </div>
-          </div>
-          <div class="input">
-            <label for="address"><small>Address</small></label>
-            <input type="text" id="address" name="address" />
-          </div>
-          <div class="input">
-            <label for="apartment"><small>Apartment, suite, etc.</small></label>
-            <input type="text" id="apartment" name="apartment" />
-          </div>
-          <div class="input">
-            <label for="city"><small>City</small></label>
-            <input type="text" id="city" name="city" />
-          </div>
-          <div class="input">
-            <label for="country"><small>Country</small></label>
-            <select id="country" name="country">
-              <option value="Canada">Canada</option>
-              <option value="UnitedStates">United States</option>
-              <option value="Mexico">Mexico</option>
-            </select>
-          </div>
-          <div class="input">
-            <label for="state"><small>State or province</small></label>
-            <input type="text" id="state" name="state" />
-          </div>
-          <div class="input">
-            <label for="postalcode"><small>Postal code</small></label>
-            <input type="text" id="postalcode" name="postalcode" />
-          </div>
-          <div class="input">
-            <label for="postalcode"><small>Phone number</small></label>
-            <input type="number" id="postalcode" name="postalcode" />
-          </div>
-        </div>
-      </section>
-
-      <section id="order-summary">
-        <div>
-          <h2>Order summary</h2>
-
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
-
-            <div class="product-info">
-              <div>
-                <h5>Ocean Avenue Lyrics T-Shirt</h5>
-                <span>Large</span>
-                <em>$32.00</em>
+            <div class="input-group-3-col">
+              <div class="input">
+                <label for="apartment">Apartment, suite, etc.</label>
+                <input type="text" name="apartment" id="apartment" />
               </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
-
-            <div class="product-info">
-              <div>
-                <h5>Ocean Avenue Lyrics T-Shirt</h5>
-                <span>Large</span>
-                <em>$32.00</em>
+            <div class="input-group-2-col">
+              <div class="input">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="canada">Canada</option>
+                  <option value="us">United States</option>
+                  <option value="mexico">Mexico</option>
+                </select>
+              </div>
+              <div class="input">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" />
               </div>
             </div>
-          </div>
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
-
-            <div class="product-info">
-              <div>
-                <h5>Ocean Avenue Lyrics T-Shirt</h5>
-                <span>Large</span>
-                <em>$32.00</em>
+            <div class="input-group-2-col">
+              <div class="input">
+                <label for="province">Province</label>
+                <select id="province" name="province">
+                  <option value="alberta">Alberta</option>
+                  <option value="british-columbia">British Columbia</option>
+                  <option value="nova-scotia">Nova Scotia</option>
+                </select>
+              </div>
+              <div class="input">
+                <label for="postal-code">Postal code</label>
+                <input type="text" name="postal-code" id="postal-code" />
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+          <section class="form-group" id="payment">
+            <h2 class="title-3">Payment</h2>
+            <div class="input">
+              <label for="name-on-card">Name on card</label>
+              <input type="text" name="name-on-card" id="name-on-card" />
+            </div>
+            <div class="input">
+              <label for="card-number">Card number</label>
+              <input type="number" name="card-number" id="card-number" />
+            </div>
+            <div class="input-group-3-col">
+              <div class="input">
+                <label for="expiration-date">Expiration date</label>
+                <input
+                  type="number"
+                  name="expiration-date"
+                  id="expiration-date"
+                  placeholder="MM/YY"
+                  aria-placeholder="MM/YY"
+                />
+              </div>
+              <div class="input">
+                <label for="cvc">CVC</label>
+                <input type="number" name="cvc" id="cvc" />
+              </div>
+            </div>
+          </section>
+          <section id="next-step">
+            <p class="disclaimer text-tertiary">
+              You won't be charged until after the next step.
+            </p>
+            <a href="checkout.html" class="primary">Review information</a>
+          </section>
+        </section>
+        <section id="order-summary">
+          <h2 class="title-3">Order summary</h2>
+
+          <section id="order-products">
+            <section class="order-product">
+              <img
+                src="/img/paranoia-hoodie.png"
+                width="1080"
+                height="1080"
+                alt="Paranoia Hoodie"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <h3 class="headline"><strong>Paranoia Hoodie</strong></h3>
+                  <span class="text-lg">$39.99</span>
+                  <span class="caption-text">Size: Large</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="order-product">
+              <img
+                src="/img/i-miss-you-lyrics-shirt.png"
+                width="1080"
+                height="1080"
+                alt="I Miss You Lyrics T-Shirt"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <h3 class="headline">
+                    <strong>I Miss You Lyrics T-Shirt</strong>
+                  </h3>
+                  <span class="text-lg">$29.99</span>
+                  <span class="caption-text">Size: Large</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="order-product">
+              <img
+                src="/img/sad-face-tote-bag.png"
+                width="1080"
+                height="1080"
+                alt="Sad Face Tote Bag"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <h3 class="headline">
+                    <strong>Sad Face Tote Bag</strong>
+                  </h3>
+                  <span class="text-lg">$29.99</span>
+                  <span class="caption-text">Color: White</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section id="order-total">
+            <table>
+              <tr>
+                <td>Subtotal</td>
+                <td>$89.97</td>
+              </tr>
+              <tr>
+                <td>Shipping estimate</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Tax estimate</td>
+                <td>$10.80</td>
+              </tr>
+              <tr>
+                <td class="headline"><strong>Subtotal</strong></td>
+                <td class="headline"><strong>$105.77</strong></td>
+              </tr>
+            </table>
+          </section>
+
+          <section id="next-step-desktop">
+            <p class="disclaimer text-tertiary">
+              You won't be charged until after the next step.
+            </p>
+            <a href="checkout.html" class="primary">Review information</a>
+          </section>
+        </section>
       </section>
     </main>
+    <footer>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+      </div>
+      <div class="socials"></div>
+      <small>© 2023 Dayside, Inc. All rights reserved.</small>
+    </footer>
   </body>
 </html>
