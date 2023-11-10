@@ -15,7 +15,9 @@
   </head>
   <body>
     <header class="primary-header flex">
-      <span class="justify-start"><a class="logo" href="index.html">Dayside</a></span>
+      <span class="justify-start"
+        ><a class="logo" href="index.html">Dayside</a></span
+      >
 
       <button class="mobile-nav-toggle" aria-label="navigation"></button>
 
@@ -24,59 +26,95 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="cart.html"  aria-label="Cart"><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-            />
-          </svg></a></li>
-  
+          <li>
+            <a href="cart.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="large-title">Contact us</h1>
+      <h1 class="title-1">Contact us</h1>
       <section class="contact-form">
-        <form action="#" method="post">
-          <div class="form-info">
-            <label for="Name">Name</label>
-            <input type="text" id="Name" name="name " placeholder="first & last name" required />
-          </div>
+        <div>
+          <form action="#" method="post">
+            <div class="form-info">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First and last name"
+                required
+              />
+            </div>
 
-          <div class="form-info">
-            <label for="orderNumber">Order Number</label>
-            <input type="text" id="orderNumber" name="orderNumber" placeholder="1234567890" required />
-          </div>
-          <div class="form-info">
-            <label for="Email">Email</label>
-            <input type="email" id="Email" name="email" placeholder="johndoe@gmail.com" required />
-          </div>
-          <div class="form-info">
-            <label for="Phone">Phone</label>
-            <input type="text" id="Phone" name="Phone" placeholder="+1 (123) 456-7890" required />
-          </div>
+            <div class="form-info">
+              <label for="orderNumber">Order number</label>
+              <input
+                type="text"
+                id="orderNumber"
+                name="orderNumber"
+                placeholder="1234567890"
+                required
+              />
+            </div>
+            <div class="form-info">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="johndoe@gmail.com"
+                required
+              />
+            </div>
+            <div class="form-info">
+              <label for="Phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                name="Phone"
+                placeholder="+1 (123) 456-7890"
+                required
+              />
+            </div>
 
-          <div class="form-info" id="message">
-            <label for="Message">Message</label>
-            <textarea id="Message" name="essage" rows="4" required></textarea>
+            <div class="form-info" id="message">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+          </form>
+          <div class="next-step">
+            <a href="ticket.html" class="primary">Submit ticket</a>
           </div>
-          <!-- switch to button if not making a page -->
-          <a href="ticket.html" class="primary"> Submit Ticket</a> 
-        </form>
+        </div>
+
         <section>
           <div class="contact-info">
             <div>
-              <h2>Hours</h2>
-  
+              <h2 class="headline">Hours</h2>
+
               <ul>
                 <li>Monday to Friday: 9:00 AM - 6:00 PM PST</li>
                 <li>Saturday: 10:00 AM - 4:00 PM PST</li>
@@ -84,26 +122,33 @@
               </ul>
             </div>
             <div>
-              <h2>Address</h2>
-                <p>1234 Fashion Avenue Vancouver, <br> BC V1X 2Y3, <br> Canada</p>
+              <h2 class="headline">Address</h2>
+              <p>
+                1234 Fashion Avenue<br />
+                Vancouver, BC V1X 2Y3<br />
+                Canada
+              </p>
             </div>
             <div>
-              <h2>Support</h2>
+              <h2 class="headline">Support</h2>
               <ul>
-                <li>Phone +1 (123) 456-7890</li>
-                <li>General Inquiries: contact@daysideclothing.com</li>
-                <li>Sales: sales@daysideclothing.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>
+                  General Inquiries:
+                  <a href="mailto:contact@dayside.com">contact@dayside.com</a>
+                </li>
+                <li>
+                  Sales:
+                  <a href="mailto:sales@dayside.com">sales@dayside.com</a>
+                </li>
               </ul>
             </div>
           </div>
         </section>
-
-
-
       </section>
 
       <section class="map">
-                <img class="map" src="img/map.jpg" alt="dsfsd" width="10" height="10" />
+        <img class="map" src="img/map.jpg" alt="dsfsd" width="10" height="10" />
       </section>
 
       <section class="faq">
@@ -111,23 +156,48 @@
           <h2 class="title-1">Frequently asked <span>questions</span></h2>
         </div>
 
-
         <div class="info">
           <details class="accordion-container">
-            <summary class="accordion">Can I make modifications to my order after its been placed?</summary>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <summary class="accordion headline text-base">
+              Can I make modifications to my order after it's been placed?
+            </summary>
+            <p>
+              We pride ourselves on our customer service, so reach out to us at
+              <a href="mailto:contact@dayside.com">contact@dayside.com</a> with
+              your order number ready and we'll try to help you out as much as
+              we can!
+            </p>
           </details>
           <details class="accordion-container">
-            <summary class="accordion">Do you ship internationally?</summary>
-            <p class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <summary class="accordion headline text-base">
+              Do you ship internationally?
+            </summary>
+            <p class="panel">
+              Unfortunately, we do not ship internationally. Our shipping is
+              limited to Canada, United States, and Mexico only. We do provide a
+              flat shipping rate of $5.00 for Canadian purchases though!
+            </p>
           </details>
           <details class="accordion-container">
-            <summary class="accordion"> How do I start a return?</summary>
-            <p class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <summary class="accordion headline text-base">
+              How do I start a return?
+            </summary>
+            <p class="panel">
+              Please reach out to us at
+              <a href="mailto:contact@dayside.com">contact@dayside.com</a> with
+              your order number ready and we'll help you process your return.
+              Thanks for your patience!
+            </p>
           </details>
           <details class="accordion-container">
-            <summary class="accordion">I used the incorrect adress. How can I update?</summary>
-            <p class="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <summary class="accordion headline text-base">
+              I used the incorrect adress. How can I update?
+            </summary>
+            <p class="panel">
+              Please reach out to us at
+              <a href="mailto:contact@dayside.com">contact@dayside.com</a> with
+              your order number ready and send us the correct address.
+            </p>
           </details>
         </div>
       </section>

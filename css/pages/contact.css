@@ -5,8 +5,8 @@ main {
   overflow: hidden;
 }
 
-section {
-  /* margin-top: var(--sp-4xl); */
+.contact-info p {
+  margin-bottom: 0;
 }
 
 .large-title {
@@ -15,24 +15,17 @@ section {
 
 .contact-form {
   display: grid;
-  gap: var(--sp-5xl);
+  gap: var(--sp-2xl);
 }
 
-form ::placeholder{
-  text-transform:initial
+form ::placeholder {
+  text-transform: initial;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   gap: var(--sp-xl);
-}
-
-.contact-info h2 {
-  font-family: "Hubot Sans";
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 a.primary {
@@ -47,20 +40,10 @@ span {
   display: block;
 }
 
-
-input {
-  all: unset;
-  padding: var(--sp-2xs);
-  transition: outline 0.25s, background-color 0.125s;
-  outline: 1px solid var(--zinc-700);
-  background-color: var(--zinc-800);
-}
-
 .form-info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  text-transform: uppercase;
+  gap: var(--sp-sm);
 }
 
 #message {
@@ -70,7 +53,7 @@ input {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-4xl);
+  gap: var(--sp-3xl);
 
   /* align-items: flex-end; */
 }
@@ -80,50 +63,47 @@ input {
   padding: 0;
   margin: 0;
 }
-textarea {
-  background-color: rgb(57, 57, 57);
-  border-style: none;
-  color: white;
-}
 
 .accordion-container {
-  border: solid white;
-  border-width: 1px 0;
+  border-bottom: 1px solid white;
+}
+
+.accordion-container:first-of-type {
+  border-top: 1px solid white;
+}
+
+p.panel {
+  margin-bottom: calc(var(--sp-sm) + var(--sp-xs));
 }
 
 .accordion {
   cursor: pointer;
   color: white;
-  padding: var(--sp-lg) 0;
-  text-transform: uppercase;
+  padding: calc(var(--sp-sm) + var(--sp-xs)) 0 var(--sp-xs) 0;
 }
 
 .faq {
   display: flex;
   flex-direction: column;
-  margin-top: var(--sp-6xl);
+  margin-top: var(--sp-5xl);
+  gap: var(--sp-sm);
 }
 
+section.map {
+  margin-top: var(--sp-5xl);
+}
 
-.map{
-    margin-top: var(--sp-5xl);
-    max-width: 100%;
-    height: 50vh;
-    /* height: 100%; */
-    object-fit: cover;
-    overflow: hidden;
+.map {
+  max-width: 100%;
+  height: 50vh;
+  /* height: 100%; */
+  object-fit: cover;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 55rem) {
-  main {
-    padding: var(--sp-6xl);
-  }
   .contact-form {
     grid-template-columns: 3fr 2fr;
-  }
-
-  .contact-info {
-    margin-left: var(--sp-6xl);
   }
 
   .accordion-container {
@@ -137,12 +117,22 @@ textarea {
   }
 }
 
+.next-step {
+  display: flex;
+  justify-content: end;
+}
+
+.next-step a {
+  margin-top: var(--sp-xl);
+  width: fit-content;
+}
+
 /* desktop @ 32 rem  */
 @media screen and (min-width: 32rem) {
   .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--sp-xl);
+    row-gap: var(--sp-2xl);
   }
 
   .title {
@@ -154,9 +144,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 130rem) {
-    main{
-        margin:0 10%;
-    }
+@media screen and (min-width: 60rem) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
+  .contact-form {
+    gap: var(--sp-6xl);
+  }
 }

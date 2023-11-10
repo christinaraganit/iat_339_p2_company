@@ -142,7 +142,10 @@ code {
   line-height: 90%;
 }
 
-.headline, label, .subtitle, .caption-text {
+.headline,
+label,
+.subtitle,
+.caption-text {
   font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
 }
 
