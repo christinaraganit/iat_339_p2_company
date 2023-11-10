@@ -287,3 +287,19 @@ input[type="number"]:focus {
   background-color: var(--zinc-700);
   border-radius: 0;
 }
+
+.td-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2xs);
+  align-items: center;
+}
+
+.chip {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: var(--sp-2xs) var(--sp-xs);
+  background-color: var(--zinc-700);
+  border-radius: var(--sp-2xl);
+  color: var(--text-secondary);
+}

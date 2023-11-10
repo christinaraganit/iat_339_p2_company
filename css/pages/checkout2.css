@@ -16,10 +16,6 @@ main {
     max-width: calc(100vw - (var(--sp-2xl) * 2));
 }
 
-.input-group-2-col {
-    max-width: calc(100vw - (var(--sp-2xl) * 2) - var(--sp-base));
-}
-
 #order-summary {
     background-color: var(--zinc-900);
     padding: var(--sp-2xl) var(--sp-2xl) calc(var(--sp-2xl) - var(--sp-sm)) var(--sp-2xl);
@@ -28,7 +24,7 @@ main {
 
 #order-products {
     margin-top: var(--sp-lg);
-    margin-bottom: var(--sp-4xl);
+    border-bottom: 1px solid var(--zinc-800);
 }
 
 .order-product {
@@ -58,16 +54,21 @@ main {
 }
 
 .input-group-2-col, .input-group-3-col {
+    width: 100%;
     display: flex;
     gap: var(--sp-base);
 }
 
 .input-group-2-col div {
-    width: 50%;
+    width: 50%
+}
+
+.input-group-2-col select, input {
+    width: 100%;
 }
 
 .input-group-3-col div {
-    width: calc(100% / 3);
+    width: calc((100% / 2));
 }
 
 .order-product-details h3 {
@@ -75,7 +76,7 @@ main {
 }
 
 #order-total table {
-    margin-top: var(--sp-base);
+    margin-top: var(--sp-xl);
     width: 100%;
 }
   
@@ -99,6 +100,33 @@ main {
 
 #next-step {
   display: none;
+}
+
+.input-with-button {
+    margin-top: var(--sp-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-xs);
+}
+
+.input-and-button {
+    display: flex;
+    gap: var(--sp-sm);
+}
+
+.input-and-button button {
+    background-color: transparent;
+    color: var(--primary-500);
+    border: 1px solid var(--primary-500);
+}
+
+.input-and-button button:hover, .input-and-button button:focus {
+    background-color: var(--primary-500);
+    color: var(--zinc-900)
+}
+
+.input-and-button input {
+    width: 100%;
 }
 
 #next-step-desktop {
@@ -145,6 +173,11 @@ main {
    #next-step-desktop {
     display: none;
    }
+
+  
+   .input-group-3-col div {
+        width: calc(100% / 3);
+    }
 }
 
 @media screen and (min-width: 80rem) {
