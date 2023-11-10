@@ -1,0 +1,196 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Order</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/pages/checkout2.css" />
+    <link rel="stylesheet" href="./css/pages/review-order.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <script src="./js/nav.js" defer></script>
+  </head>
+
+  <body>
+    <header class="primary-header flex">
+      <span class="justify-start"
+        ><a class="logo" href="index.html">Dayside</a></span
+      >
+
+      <button class="mobile-nav-toggle"></button>
+
+      <nav>
+        <ul data-visible="false" class="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li>
+            <a href="cart.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="confirmation">
+      <section id="content">
+        <section id="order-info">
+          <h1 class="title-1">Confirm your order</h1>
+          <section id="customer-info">
+            <div class="customer-detail">
+              <h2 class="text-base headline">Customer information</h2>
+              <span>Demetras Snow</span>
+              <span>demetrasnow@figma.com</span>
+              <span>(604) 354-1704</span>
+            </div>
+            <div class="customer-detail">
+              <h2 class="text-base headline">Shipping information</h2>
+              <span>Demetras Snow</span>
+              <span>4292 Coldwater Creek</span>
+              <span>Revelstoke, BC V0E 0C2</span>
+            </div>
+            <div class="customer-detail">
+              <h2 class="text-base headline">Billing information</h2>
+              <span>Demetras Snow</span>
+              <span>4292 Coldwater Creek</span>
+              <span>Revelstoke, BC V0E 0C2</span>
+            </div>
+            <div class="customer-detail">
+              <h2 class="text-base headline">Payment method</h2>
+              <span>VISA</span>
+              <span>•••• 2076</span>
+            </div>
+          </section>
+          <section id="next-step">
+            <a href="shop.html" class="primary">Continue shopping</a>
+          </section>
+        </section>
+        <section id="order-summary">
+          <h2 class="title-3">Order summary</h2>
+          <section id="order-products">
+            <section class="order-product">
+              <img
+                src="/img/paranoia-hoodie.png"
+                width="1080"
+                height="1080"
+                alt="Paranoia Hoodie"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <div class="name-price">
+                    <h3 class="headline"><strong>Paranoia Hoodie</strong></h3>
+                    <span class="text-lg">$39.99</span>
+                  </div>
+                  <span class="caption-text">Size: Large</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="order-product">
+              <img
+                src="/img/i-miss-you-lyrics-shirt.png"
+                width="1080"
+                height="1080"
+                alt="I Miss You Lyrics T-Shirt"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <div class="name-price">
+                    <h3 class="headline">
+                      <strong>I Miss You Lyrics T-Shirt</strong>
+                    </h3>
+                    <span class="text-lg">$29.99</span>
+                  </div>
+                  <span class="caption-text">Size: Large</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="order-product">
+              <img
+                src="/img/sad-face-tote-bag.png"
+                width="1080"
+                height="1080"
+                alt="Sad Face Tote Bag"
+              />
+              <div class="order-product-info">
+                <div class="order-product-details">
+                  <div class="name-price">
+                    <h3 class="headline">
+                      <strong>Sad Face Tote Bag</strong>
+                    </h3>
+                    <span class="text-lg">$29.99</span>
+                  </div>
+                  <span class="caption-text">Color: White</span>
+                  <span class="caption-text">Quantity: 1</span>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section id="order-total">
+            <table>
+              <tr>
+                <td>Subtotal</td>
+                <td>$89.97</td>
+              </tr>
+              <tr>
+                <td>Shipping estimate</td>
+                <td>$5.00</td>
+              </tr>
+              <tr>
+                <td>Tax estimate</td>
+                <td>$10.80</td>
+              </tr>
+              <tr>
+                <td class="td-flex">
+                  Discount <span class="chip">Deicide</span>
+                </td>
+                <td>-$8.91</td>
+              </tr>
+              <tr>
+                <td class="headline"><strong>Subtotal</strong></td>
+                <td class="headline"><strong>$105.77</strong></td>
+              </tr>
+            </table>
+          </section>
+
+          <section id="next-step-desktop">
+            <a href="shop.html" class="primary">Continue shopping</a>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+      </div>
+      <div class="socials"></div>
+      <small>© 2023 Dayside, Inc. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
