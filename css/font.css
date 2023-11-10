@@ -1,11 +1,19 @@
 @font-face {
   font-family: "Hubot Sans";
-  src: url("../fonts/HubotSans[slnt\,wdth\,wght].woff2") format("woff2");
+  src: url("./fonts/HubotSans[slnt\,wdth\,wght].woff2") format("woff2");
+  /* src: url("/fonts/HubotSans[slnt\,wdth\,wght].woff2"woff2"); */
+  src: url();
 }
 
-@font-face {
+/* @font-face {
   font-family: "Mango Grotesque";
-  src: url("../fonts/Mango\ Grotesque-VF.woff2") format("woff2");
+  src: url("/fonts/Mango\ Grotesque-VF.woff2") format("woff2");
+} */
+
+@font-face {
+  font-family: "Mango-Grotesque";
+  src: url('../fonts/Mango Grotesque-VF.woff2') format('woff2');
+  /* Other font properties like font-weight, font-style, etc. can be added if needed */
 }
 
 body {
@@ -94,7 +102,7 @@ small {
 }
 
 .mango-grotesque {
-  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  font-family: "Mango-Grotesque", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
 
@@ -128,7 +136,7 @@ code {
 .title-2,
 .title-3,
 .title-4 {
-  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  font-family: "Mango-Grotesque", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   margin-bottom: var(--sp-xs);
   line-height: 90%;

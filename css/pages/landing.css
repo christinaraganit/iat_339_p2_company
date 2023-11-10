@@ -36,9 +36,17 @@ section {
   /* overflow: hidden; */
 }
 
-figure {
-  margin: 0 0 2rem 0;
+.collection-grid a {
+  margin-bottom:var(--sp-xl)
 }
+
+figure {
+  margin: 0;
+  height:100%;
+
+}
+
+
 figcaption {
   margin-top: var(--sp-sm);
 }
