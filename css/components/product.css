@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.product .icon-button .tertiary {
+  height: fit-content;
+}
+
 .product {
   display: flex;
   justify-content: space-between;

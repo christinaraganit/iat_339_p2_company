@@ -124,8 +124,6 @@ button {
 }
 
 button.tertiary {
-  height: auto;
-  min-height: auto;
   background-color: transparent;
   padding: 0;
   color: var(--primary-500);
