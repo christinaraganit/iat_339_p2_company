@@ -16,7 +16,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--sp-6xl);
-  max-width: 84rem;
+  max-width: 90rem;
 }
 
 #main-info > * {
