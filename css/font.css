@@ -107,6 +107,10 @@ em {
   font-size: 1.125rem;
 }
 
+.text-base {
+  font-size: 1rem;
+}
+
 .text-sm {
   font-size: 0.9rem;
 }
@@ -170,4 +174,8 @@ strong {
 
 .text-tertiary {
   color: var(--text-tertiary);
+}
+
+.text-orange {
+  color: var(--primary-500);
 }
