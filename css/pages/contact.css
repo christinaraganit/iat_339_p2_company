@@ -6,7 +6,7 @@ main {
 }
 
 section {
-  margin-top: var(--sp-4xl);
+  /* margin-top: var(--sp-4xl); */
 }
 
 .title {
@@ -39,16 +39,16 @@ a.primary {
   margin-bottom: 0;
 }
 
-.poo {
-  height: 20rem;
-  background-color: var(--zinc-700);
+span {
+  display: block;
 }
+
 
 input {
   all: unset;
   padding: var(--sp-2xs);
-  /* transition: outline 0.25s, background-color 0.125s;
-    outline: 1px solid var(--zinc-700); ANDREW SAID DONT TOUCH THE OUTLINE */
+  transition: outline 0.25s, background-color 0.125s;
+  outline: 1px solid var(--zinc-700);
   background-color: var(--zinc-800);
 }
 
@@ -77,53 +77,41 @@ input {
   margin: 0;
 }
 textarea {
-  width: 100%;
   background-color: rgb(57, 57, 57);
   border-style: none;
   color: white;
 }
+
 .accordion-container {
   border: solid white;
   border-width: 1px 0;
-  padding-top: var(--sp-xs);
 }
 
 .accordion {
-  background-color: rgba(255, 255, 255, 0);
-  text-align: left;
   cursor: pointer;
   color: white;
-  padding: 0;
+  padding: var(--sp-lg) 0;
+  text-transform: uppercase;
 }
 
-/* styling for arrow */
-.accordion::after {
-  display: inline-block;
-  content: "\203A";
-
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  transition: transform 0.2s ease-in;
-}
-.active {
-  font-weight: bold;
+.faq {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--sp-6xl);
 }
 
-.active::after {
-  transform: rotate(90deg);
-}
-
-.panel {
-  margin: var(--sp-xs) 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.4s cubic-bezier(0.63, -0.01, 0.19, 1.01) max-height 0s;
-  /* background-color: red; */
-}
-
-.temp h2 {
+.faq-title h2 {
   font-size: clamp(1rem, 20vw, 7rem);
   line-height: 90%;
+}
+
+.map{
+    margin-top: var(--sp-5xl);
+    max-width: 100%;
+    height: 50vh;
+    /* height: 100%; */
+    object-fit: cover;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 55rem) {
@@ -136,6 +124,16 @@ textarea {
 
   .contact-info {
     margin-left: var(--sp-6xl);
+  }
+
+  .accordion-container {
+    width: 45vw;
+  }
+
+  .faq {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--sp-5xl);
   }
 }
 
@@ -151,13 +149,14 @@ textarea {
     font-size: clamp(5rem, 20vw + 1rem, 10rem);
   }
 
-  .temp {
-    display: flex;
-    flex-direction: row;
-    gap: var(--sp-8xl);
-  }
-
   .map {
     max-width: 100%;
   }
+}
+
+@media screen and (min-width: 130rem) {
+    main{
+        margin:0 10%;
+    }
+
 }

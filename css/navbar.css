@@ -38,6 +38,14 @@
   display: none;
 }
 
+.logo{
+  font-family: "Mango Grotesque";
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 nav a,
 footer .links a {
   text-transform: uppercase;
