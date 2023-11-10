@@ -26,6 +26,11 @@
   margin: 0 1rem;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .primary-nav {
   display: flex;
   gap: var(--sp-lg);
@@ -38,11 +43,14 @@
   display: none;
 }
 
-.logo{
+.logo {
+  display: block;
+  margin-top: calc(var(--sp-xs));
   font-family: "Mango Grotesque";
   font-size: 3rem;
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 100%;
   font-weight: bold;
 }
 
