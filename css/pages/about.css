@@ -189,6 +189,10 @@ span {
   }
 }
 
+.dev-photo {
+  aspect-ratio: 1 / 1;
+}
+
 /* desktop view at 900px */
 @media screen and (min-width: 55rem) {
   main {
