@@ -123,6 +123,14 @@ button {
   border-style: none;
 }
 
+button.tertiary {
+  height: auto;
+  min-height: auto;
+  background-color: transparent;
+  padding: 0;
+  color: var(--primary-500);
+}
+
 button:hover,
 a.primary:hover,
 a.secondary:hover,

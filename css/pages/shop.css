@@ -82,7 +82,7 @@ main {
 }
 
 @media screen and (min-width: 100rem) {
-  #products-grid {
+  #products-grid:not(#product-main #products-grid) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }

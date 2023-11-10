@@ -30,6 +30,7 @@ code,
 ol {
   max-width: 40rem;
   line-height: 1.5;
+  margin-bottom: var(--sp-3xl);
 }
 
 .large-title {
@@ -38,19 +39,23 @@ ol {
 
 .title-1 {
   font-size: 4.9375rem;
+  font-weight: 600;
 }
 
 .title-2 {
   font-size: 3.8125rem;
   margin-bottom: var(--sp-lg);
+  font-weight: 600;
 }
 
 .title-3 {
   font-size: 2.875rem;
+  font-weight: 600;
 }
 
 .title-4 {
   font-size: 2.125rem;
+  font-weight: 600;
 }
 
 .headline {
@@ -60,9 +65,12 @@ ol {
 }
 
 p {
-  line-height: 135%;
-  margin-bottom: var(--sp-xl);
+  line-height: 140%;
   max-width: 32rem;
+}
+
+p:not(p:last-of-type) {
+  margin-bottom: var(--sp-sm);
 }
 
 p.label.orange {
@@ -118,8 +126,14 @@ code {
   line-height: 90%;
 }
 
-.headline {
+.headline, label, .subtitle {
   font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  margin-bottom: var(--sp-xs);
+  font-weight: 600;
 }
 
 .callout {
