@@ -31,21 +31,18 @@ section {
 .collection-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--sp-sm);
-
-  /* overflow: hidden; */
+  column-gap: var(--sp-lg);
+  row-gap: var(--sp-3xl);
 }
 
 .collection-grid a {
-  margin-bottom:var(--sp-xl)
+  margin-bottom: var(--sp-xl);
 }
 
 figure {
   margin: 0;
-  height:100%;
-
+  height: 100%;
 }
-
 
 figcaption {
   margin-top: var(--sp-sm);
