@@ -1,4 +1,4 @@
-@import url(../variables.css);
+@import url("../variables.css");
 main{
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ section img{
 
 .dev-title{
     font-family: "Hubot Sans";
-    font-size: clamp(1rem, 1.3vw ,2rem);
+    font-size: clamp(1rem, 2vw ,2rem);
     font-weight: 400;
     margin-top: -1rem;
 
@@ -226,7 +226,7 @@ span{
     .developer{
         grid-template-columns: 1fr 1.5fr;
         column-gap:var(--sp-6xl);
-        row-gap:var(--sp-6xl);
+        row-gap:var(--sp-xl);
         width: 100%;
         margin:0;
 

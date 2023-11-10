@@ -9,8 +9,8 @@ section {
   /* margin-top: var(--sp-4xl); */
 }
 
-.title {
-  font-size: clamp(5rem, 20vw + 1rem, 10rem);
+.large-title {
+  margin-bottom: var(--sp-4xl);
 }
 
 .contact-form {
@@ -104,10 +104,6 @@ textarea {
   margin-top: var(--sp-6xl);
 }
 
-.faq-title h2 {
-  font-size: clamp(1rem, 20vw, 7rem);
-  line-height: 90%;
-}
 
 .map{
     margin-top: var(--sp-5xl);

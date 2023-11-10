@@ -18,11 +18,11 @@ section {
   font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(3rem, 4vw, 8rem);
+  font-size: clamp(1rem, 8vw, 4rem);
 }
 
-.expand {
-  line-height: clamp(2rem, 35vw + 1rem, 40rem);
+.large-title {
+  line-height: clamp(2rem, 30vw + 1rem, 30rem);
   margin: 0;
   padding: 0;
   font-size: clamp(5rem, 40vw + 1rem, 45rem);
@@ -31,7 +31,7 @@ section {
 .collection-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--sp-base);
+  gap: var(--sp-sm);
 
   /* overflow: hidden; */
 }
@@ -57,6 +57,7 @@ section img {
 }
 .collab-grid {
   display: grid;
+  gap: var(--sp-sm);
 }
 
 .collab-photo img {
