@@ -4,8 +4,8 @@ main {
   padding: var(--sp-sm);
 }
 
-section{
-    margin-top: var(--sp-5xl);
+section {
+  margin-top: var(--sp-5xl);
 }
 
 .hero {
@@ -39,16 +39,15 @@ section{
 figure {
   margin: 0 0 2rem 0;
 }
-figcaption{
-    margin-top: var(--sp-sm);
+figcaption {
+  margin-top: var(--sp-sm);
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-
-section img{
-    max-width:100%
+section img {
+  max-width: 100%;
 }
 
 .collection-item img {
@@ -56,8 +55,32 @@ section img{
   vertical-align: middle;
   object-fit: cover;
 }
-.collab-grid{
-    display:grid;
+.collab-grid {
+  display: grid;
+}
+
+.collab-photo img {
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+.collab-photo {
+  position: relative;
+}
+.photo-text {
+  letter-spacing: -.3rem;
+  font-size: clamp(1rem, 10vw, 10rem);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(250, 113, 136);
+  /* color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 48rem) {
@@ -68,7 +91,7 @@ section img{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .collab-grid{
+  .collab-grid {
     grid-template-columns: 1fr 1fr;
   }
 }

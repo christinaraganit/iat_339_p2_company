@@ -117,7 +117,7 @@ h1 {
     padding-top: var(--sp-5xl);
   }
 
-  body {
+  main {
     padding: 0;
     margin-left: 15vw;
   }
