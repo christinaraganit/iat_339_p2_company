@@ -9,120 +9,181 @@
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/pages/cart.css" />
     <link rel="stylesheet" href="./css/components/product.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <script src="./js/nav.js" defer></script>
   </head>
 
   <body>
+    <h1 class="title-1">Shopping Cart</h1>
     <main>
-      <h1>Shopping Cart</h1>
-      <section id="content">
-        <section id="products">
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
+      <section id="order-summary">
+        <h2 class="title-3">Order summary</h2>
 
-            <div class="product-info">
-              <div>
-                <h4>Ocean Avenue Lyrics T-Shirt</h4>
-                <span>Large</span>
-                <em>$32.00</em>
-              </div>
-              <div>
-                <select class="number-dropdown">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <a href=""><small>Remove</small></a>
-              </div>
-            </div>
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$99.99</td>
+          </tr>
+          <tr>
+            <td>Shipping estimate</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Tax estimate</td>
+            <td>$8.32</td>
+          </tr>
+          <tr>
+            <td class="headline">Subtotal</td>
+            <td class="headline">$7.88</td>
+          </tr>
+        </table>
+        <a href="checkout.html" class="primary">Checkout</a>
+      </section>
+
+      <section id="products">
+        <section class="product">
+          <div class="product-img">
+            <img
+              src="./img/paranoia-hoodie.png"
+              alt="Paranoia Hoodie"
+              height="1080"
+              width="1080"
+            />
           </div>
 
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
-
-            <div class="product-info">
+          <div class="product-info">
+            <div class="product-details">
               <div>
-                <h4>Ocean Avenue Lyrics T-Shirt</h4>
-                <span>Large</span>
-                <em>$32.00</em>
+                <h3 class="headline">Paranoia Hoodie</h3>
+                <span>Size: Large</span>
               </div>
-              <div>
+              <div class="price-qty-info">
                 <select class="number-dropdown">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
+                  <option value="3">4</option>
                 </select>
-                <a href=""><small>Remove</small></a>
+                <strong>$39.99</strong>
               </div>
             </div>
-          </div>
-
-          <div class="product">
-            <div class="product-img">
-              <img
-                src="./img/mockup.png"
-                alt="Ocean Avenue Lyrics T-Shirt"
-                height="1080"
-                width="1080"
-              />
-            </div>
-
-            <div class="product-info">
-              <div>
-                <h4>Ocean Avenue Lyrics T-Shirt</h4>
-                <span>Large</span>
-                <em>$32.00</em>
-              </div>
-              <div>
-                <select class="number-dropdown">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                <a href=""><small>Remove</small></a>
-              </div>
-            </div>
+            <button class="icon-button tertiary" aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </section>
 
-        <section id="order-summary">
-          <h3>Order summary</h3>
+        <section class="product">
+          <div class="product-img">
+            <img
+              src="./img/i-miss-you-lyrics-shirt.png"
+              alt="I Miss You Lyrics T-Shirt"
+              height="1080"
+              width="1080"
+            />
+          </div>
 
-          <div id="summary">
-            <div>
-              <span>Subtotal</span>
-              <em>$99.00</em>
+          <div class="product-info">
+            <div class="product-details">
+              <div>
+                <h3 class="headline">I Miss You Lyrics T-Shirt</h3>
+                <span>Size: Large</span>
+              </div>
+              <div class="price-qty-info">
+                <select class="number-dropdown">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                </select>
+                <strong>$29.99</strong>
+              </div>
             </div>
-            <div>
-              <span>Shipping estimate</span>
-              <em>$5.00</em>
+            <button class="icon-button tertiary" aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-img">
+            <img
+              src="./img/sad-face-tote-bag.png"
+              alt="Sad Face Tote Bag"
+              height="1080"
+              width="1080"
+            />
+          </div>
+
+          <div class="product-info">
+            <div class="product-details">
+              <div>
+                <h3 class="headline">Sad Face Tote Bag</h3>
+                <span>Size: Large</span>
+              </div>
+              <div class="price-qty-info">
+                <select class="number-dropdown">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                </select>
+                <strong>$19.99</strong>
+              </div>
             </div>
-            <div>
-              <span>Tax estimate</span>
-              <em>$8.32</em>
-            </div>
-            <div>
-              <h5>Order total</h5>
-              <h5><em>$112.32</em></h5>
-            </div>
-            <a href="checkout.html" class="primary">Checkout</a>
+            <button class="icon-button tertiary" aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </section>
       </section>
     </main>
+    <footer>
+      <div class="links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./cart.html">Cart</a>
+      </div>
+      <div class="socials"></div>
+      <small>© 2023 Dayside, Inc. All rights reserved.</small>
+    </footer>
   </body>
 </html>

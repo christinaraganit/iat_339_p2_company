@@ -1,29 +1,23 @@
 @import url(../variables.css);
 
-body {
-  padding: var(--sp-base);
+main {
+  padding: var(--sp-2xl);
+  padding-top: var(--sp-sm);
+  display: grid;
+  column-gap: var(--sp-4xl);
+  row-gap: var(--sp-4xl);
+  grid-template-columns: 1fr;
+}
+
+h1.title-1 {
+  padding: var(--sp-2xl);
+  padding-bottom: 0;
 }
 
 #order-summary {
   padding: var(--sp-lg);
   background-color: var(--zinc-900);
   height: fit-content;
-}
-
-#order-summary > div {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-sm);
-}
-
-#order-summary > div > div {
-  color: var(--text-secondary);
-  display: flex;
-  justify-content: space-between;
-}
-
-#order-summary h5 {
-  margin-bottom: 0;
 }
 
 #content {
@@ -40,35 +34,51 @@ h1 {
   margin-bottom: var(--sp-2xl);
 }
 
-@media screen and (min-width: 48rem) {
-  main {
-    padding-top: var(--sp-2xl);
-    padding-bottom: var(--sp-2xl);
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  #content {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--sp-4xl);
-  }
+#order-summary {
+  grid-column: 1;
+  order: 1;
 }
 
-@media screen and (min-width: 72rem) {
+#order-summary {
+  grid-row: span 1;
+}
+
+#order-summary table {
+  margin-top: var(--sp-base);
+  margin-bottom: var(--sp-xs);
+  width: 100%;
+}
+
+#order-summary td {
+  padding-bottom: var(--sp-base);
+}
+
+#order-summary table td:last-child {
+  text-align: right;
+}
+
+#order-summary td:not(.headline) {
+  color: var(--text-secondary);
+}
+
+.product-info > div:not(.price-qty-info) > span {
+  color: var(--text-secondary);
+}
+
+@media screen and (min-width: 60rem) {
   main {
-    margin-left: 10%;
-    margin-right: 10%;
+    grid-template-columns: 3fr 2fr;
   }
-
-  #content {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-
-  #products {
-    grid-column: 1 / span 3;
+  #order-summary {
+    grid-column: 2;
   }
 
   #order-summary {
-    grid-column: span 2;
+    grid-row: span 2;
+    padding: var(--sp-2xl);
+  }
+
+  #products {
+    grid-row: 1;
   }
 }

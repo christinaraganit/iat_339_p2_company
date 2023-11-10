@@ -135,8 +135,8 @@ a.tertiary:focus {
 }
 
 .icon-button {
-  height: var(--sp-4xl);
-  width: var(--sp-4xl);
+  height: var(--sp-5xl);
+  width: var(--sp-5xl);
   transition: background-color 0.25s, color 0.25s;
 }
 
@@ -145,7 +145,8 @@ a.tertiary:focus {
   background-color: var(--primary-500);
 }
 
-.icon-button.primary:hover {
+.icon-button.primary:hover,
+.icon-button.primary:focus {
   background-color: var(--primary-600);
 }
 
@@ -154,8 +155,19 @@ a.tertiary:focus {
   background-color: var(--zinc-950);
 }
 
-.icon-button.secondary:hover {
+.icon-button.secondary:hover,
+.icon-button.secondary:focus {
   color: var(--primary-500);
+}
+
+.icon-button.tertiary {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.icon-button.tertiary:hover,
+.icon-button.tertiary:focus {
+  background-color: var(--zinc-900);
 }
 
 .btn-group {
@@ -200,11 +212,23 @@ svg {
 footer {
   display: flex;
   flex-direction: column;
-  gap: var(--sp-sm);
+  gap: var(--sp-xs);
   align-items: center;
   margin-top: var(--sp-4xl);
-  padding: var(--sp-2xl);
+  padding: var(--sp-3xl);
   border-top: 1px solid var(--zinc-800);
+}
+
+footer a,
+nav a {
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+  font-size: 1.125rem;
+  line-height: 0.9375rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.0125rem;
+  text-transform: uppercase;
 }
 
 footer .links {
@@ -238,6 +262,7 @@ input[type="email"],
 input[type="number"],
 select {
   border: none;
+  font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
   color: var(--text-primary);
   padding: var(--sp-2xs);
   transition: background-color 0.125s;
