@@ -1,29 +1,20 @@
 @import url(../variables.css);
-
 main {
   padding: var(--sp-2xl);
-  padding-top: var(--sp-sm);
-  display: grid;
-  column-gap: var(--sp-4xl);
-  row-gap: var(--sp-4xl);
-  grid-template-columns: 1fr;
 }
 
-h1.title-1 {
-  padding: var(--sp-2xl);
-  padding-bottom: 0;
+#content {
+    margin-top: var(--sp-2xl);
+    display: grid;
+    width: 100%;
+    max-width: 75rem;
+    gap: var(--sp-5xl);
 }
 
 #order-summary {
   padding: var(--sp-lg);
   background-color: var(--zinc-900);
   height: fit-content;
-}
-
-#content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--sp-xl);
 }
 
 #order-summary a.primary {
@@ -66,9 +57,10 @@ h1 {
 }
 
 @media screen and (min-width: 60rem) {
-  main {
+  #content {
     grid-template-columns: 3fr 2fr;
   }
+
   #order-summary {
     grid-column: 2;
   }
@@ -80,5 +72,13 @@ h1 {
 
   #products {
     grid-row: 1;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 }
