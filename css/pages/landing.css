@@ -1,32 +1,74 @@
 @import url("../variables.css");
 
-.hero, .more-stuff {
-    padding: var(--sp-lg);
+main {
+  padding: var(--sp-sm);
 }
 
-.hero{
-    display: block;
-    margin-top: 5rem;
-    text-align: center;
+section{
+    margin-top: var(--sp-5xl);
 }
 
-.small-header{
-    font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    /* font-size: clamp(1rem, 4vw,8rem); */
-    font-size: clamp(3rem,4vw,8rem);
+.hero {
+  display: block;
+  margin-top: 5rem;
+  text-align: center;
+}
 
-
-
-
+.small-header {
+  font-family: "Mango Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 4vw, 8rem);
 }
 
 .expand {
-    line-height: clamp(2rem, 35vw + 1rem ,40rem);
-    margin: 0;
-    padding: 0;
-    font-size: clamp(5rem, 40vw + 1rem ,45rem);
-    
+  line-height: clamp(2rem, 35vw + 1rem, 40rem);
+  margin: 0;
+  padding: 0;
+  font-size: clamp(5rem, 40vw + 1rem, 45rem);
+}
 
+.collection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-base);
+
+  /* overflow: hidden; */
+}
+
+figure {
+  margin: 0 0 2rem 0;
+}
+figcaption{
+    margin-top: var(--sp-sm);
+}
+a{
+    text-decoration: none;
+}
+
+
+section img{
+    max-width:100%
+}
+
+.collection-item img {
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.collab-grid{
+    display:grid;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    margin: 0 5%;
+  }
+  .collection-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .collab-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }

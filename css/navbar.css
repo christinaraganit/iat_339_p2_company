@@ -38,13 +38,13 @@
   display: none;
 }
 
-/* input {
-    border: none; 
-    outline: none; 
-    background: none; 
-    border-bottom: 1px solid white; 
-    color: white;
-} */
+.logo{
+  font-family: "Mango Grotesque";
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 nav a,
 footer .links a {

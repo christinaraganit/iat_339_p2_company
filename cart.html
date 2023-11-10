@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/pages/cart.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <script src="./js/nav.js" defer></script>
   </head>
 
   <body>
+    <header class="primary-header flex">
+      <span class="justify-start"><a class="logo" href="index.html">Dayside</a></span>
+
+      <button class="mobile-nav-toggle"></button>
+
+      <nav>
+        <ul data-visible="false" class="primary-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="shop.html">SHOP</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>Shopping Cart</h1>
       <section id="content">
