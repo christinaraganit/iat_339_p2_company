@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/pages/shop.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pages/shop.css" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
     <script src="./js/nav.js" defer></script>
     <title>Shop</title>
   </head>
@@ -25,20 +25,24 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">contact</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="cart.html" aria-label="Cart"><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-            />
-          </svg></a></li>
+          <li>
+            <a href="cart.html" aria-label="Cart"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -51,10 +55,16 @@
           <div class="product">
             <div class="product-img">
               <a href="product.html">
-                <img width="540" height="540"
-                  src="img/paranoia-lyrics-hoodie.png" srcset="img/paranoia-lyrics-hoodie.png 1080w,img/paranoia-lyrics-hoodie-810.png 810w, img/paranoia-lyrics-hoodie-540.png 540w"
+                <img
+                  width="540"
+                  height="540"
+                  src="img/paranoia-lyrics-hoodie.png"
+                  srcset="
+                    img/paranoia-lyrics-hoodie.png     1080w,
+                    img/paranoia-lyrics-hoodie-810.png  810w,
+                    img/paranoia-lyrics-hoodie-540.png  540w
+                  "
                   alt="Paranoia Lyrics Hoodie"
-
               /></a>
 
               <div class="overlay"></div>
@@ -84,7 +94,11 @@
               <a href="product.html">
                 <img
                   src="img/i-miss-you-lyrics-shirt.png"
-                  srcset="img/i-miss-you-lyrics-shirt-540.png 540w,img/i-miss-you-lyrics-shirt-810.png 810w, img/i-miss-you-lyrics-shirt.png 1080w"
+                  srcset="
+                    img/i-miss-you-lyrics-shirt-540.png  540w,
+                    img/i-miss-you-lyrics-shirt-810.png  810w,
+                    img/i-miss-you-lyrics-shirt.png     1080w
+                  "
                   alt="I Miss You Lyrics T-Shirt"
                   width="540"
                   height="540"
@@ -116,7 +130,12 @@
             <div class="product-img">
               <a href="product.html">
                 <img
-                  src="img/paranoia-hoodie.png" srcset="img/paranoia-hoodie-540.png 540w,img/paranoia-hoodie-810.png 810w,img/paranoia-hoodie.png 1080w"
+                  src="img/paranoia-hoodie.png"
+                  srcset="
+                    img/paranoia-hoodie-540.png  540w,
+                    img/paranoia-hoodie-810.png  810w,
+                    img/paranoia-hoodie.png     1080w
+                  "
                   alt="Paranoia Hoodie"
                   width="540"
                   height="540"
@@ -148,7 +167,12 @@
             <div class="product-img">
               <a href="product.html">
                 <img
-                  src="img/sad-face-tote-bag.png" srcset="img/sad-face-tote-bag-540.png 540w, img/sad-face-tote-bag-810.png 810w, img/sad-face-tote-bag.png 1080w"
+                  src="img/sad-face-tote-bag.png"
+                  srcset="
+                    img/sad-face-tote-bag-540.png  540w,
+                    img/sad-face-tote-bag-810.png  810w,
+                    img/sad-face-tote-bag.png     1080w
+                  "
                   alt="Sad Face Tote Bag"
                   width="540"
                   height="540"
