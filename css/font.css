@@ -107,6 +107,10 @@ em {
   font-size: 1.125rem;
 }
 
+.text-sm {
+  font-size: 0.9rem;
+}
+
 code {
   display: block;
   padding: var(--sp-sm);
@@ -126,7 +130,7 @@ code {
   line-height: 90%;
 }
 
-.headline, label, .subtitle {
+.headline, label, .subtitle, .caption-text {
   font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -153,4 +157,17 @@ strong {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.caption-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
 }

@@ -259,7 +259,7 @@ div.input {
   display: flex;
   flex-direction: column;
   gap: var(--sp-xs);
-  margin-top: var(--sp-xs);
+  margin-top: var(--sp-2xl);
 }
 
 input[type="text"],
@@ -269,7 +269,8 @@ select {
   border: none;
   font-family: "Hubot Sans", Arial, Helvetica, sans-serif;
   color: var(--text-primary);
-  padding: var(--sp-2xs);
+  padding: var(--sp-xs);
+  height: var(--sp-4xl);
   transition: background-color 0.125s;
   background-color: var(--zinc-800);
 }
@@ -285,4 +286,20 @@ input[type="email"]:focus,
 input[type="number"]:focus {
   background-color: var(--zinc-700);
   border-radius: 0;
+}
+
+.td-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2xs);
+  align-items: center;
+}
+
+.chip {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: var(--sp-2xs) var(--sp-xs);
+  background-color: var(--zinc-700);
+  border-radius: var(--sp-2xl);
+  color: var(--text-secondary);
 }
