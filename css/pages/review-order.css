@@ -3,6 +3,10 @@
     gap: var(--sp-3xl);
 }
 
+#content h1 {
+    margin-bottom: var(--sp-2xl);
+}
+
 #confirmation .order-product:last-of-type {
     margin-bottom: var(--sp-2xl);
 }
