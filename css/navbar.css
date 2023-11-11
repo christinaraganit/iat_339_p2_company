@@ -93,12 +93,16 @@ footer .links a {
     display: block;
     z-index: 9999;
     background: no-repeat center/100% url("../img/burger.svg");
-    /* background-color: red; */
-    /* background-repeat: no-repeat; */
-    width: 2rem;
+    height: 2rem;
+    width: 2.5rem;
     border: 0;
 
     top: var(--sp-lg);
     right: var(--sp-lg);
+  }
+
+  .mobile-nav-toggle:hover,
+  .mobile-nav-toggle:focus {
+    background-color: var(--zinc-600);
   }
 }

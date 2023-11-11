@@ -2,6 +2,7 @@
 
 main {
   padding: var(--sp-2xl);
+  overflow: hidden;
 }
 
 section {
@@ -25,7 +26,7 @@ section {
   line-height: clamp(2rem, 30vw + 1rem, 30rem);
   margin: 0;
   padding: 0;
-  font-size: clamp(5rem, 40vw + 1rem, 45rem);
+  font-size: clamp(5rem, 40vw, 45rem);
 }
 
 .collection-grid {
@@ -61,7 +62,7 @@ section img {
 }
 .collab-grid {
   display: grid;
-  gap: var(--sp-sm);
+  gap: var(--sp-lg);
 }
 
 .collab-photo img {
@@ -105,5 +106,12 @@ section img {
   .collections,
   .collaborations {
     margin-top: var(--sp-6xl);
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
