@@ -1,0 +1,37 @@
+﻿IAT 339 - P2 - Citations
+Christina Raganit
+Michael Dresler
+
+References
+Human Interface Guidelines. (n.d). Typography | Apple Developer Documentation. https://developer.apple.com/design/human-interface-guidelines/typography 
+[@IOIIOOIO] on StackOverflow (2018). CSS Maintain Aspect Ratio not working. StackOverflow. https://stackoverflow.com/questions/49901814/css-maintain-aspect-ratio-not-working 
+[@Luca Reghellin] on StackOverflow (2019). How can I reverse the CSS grid columns order?. StackOverflow. https://stackoverflow.com/questions/55358910/how-can-i-reverse-the-css-grid-columns-order 
+[@Maik Lowrey] on StackOverflow. (2022). Show and hide with CSS animation. Stack Overflow. https://stackoverflow.com/questions/72063090/show-and-hide-with-css-animation
+MDN Web Docs. (n.d). aria-label — Accessibility | MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label 
+MDN Web Docs. (n.d). tab-index — HTML: HyperText Markup Language | MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex 
+MDN Web Docs. (n.d). <table>: The Table element — HTML: HyperText Markup Language | MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table 
+[@Rob] on StackOverflow. (2017). Reverse order of columns in CSS Grid Layout. StackOverflow. https://stackoverflow.com/questions/45383042/reverse-order-of-columns-in-css-grid-layout 
+W3Schools. (n.d). CSS :first-child Selector. W3Schools. https://www.w3schools.com/cssref/sel_firstchild.php 
+W3Schools. (n.d). CSS text-decoration property. W3Schools. https://www.w3schools.com/cssref/pr_text_text-decoration.php 
+
+Works used
+Ahlin, T., Wagner, R., Birkinbine, G., & Cowart, T [Contributors]. (2022). Hubot Sans [Font]. GitHub. https://github.com/github/hubot-sans  
+Armin, O [Photographer]. (2020). Man in black long sleeve shirt [Photograph]. Unsplash. https://unsplash.com/photos/man-in-black-long-sleeve-shirt-wH3DddKXPoQ 
+Armin, O [Photographer]. (2020). Man in white crew neck t-shirt [Photograph]. Unsplash. https://unsplash.com/photos/man-in-white-crew-neck-t-shirt-OvgYOJausq8 
+Armin, O [Photographer]. (2020). Woman in gray knit sweater [Photograph]. Unsplash. https://unsplash.com/photos/woman-in-gray-knit-sweater-_BkjDspEw_k  
+Blink-182. (2004). I Miss You [Song]. On Blink-182. Geffen Records. 
+Cole, S. (2021, August 13). Rhude x McLaren Racing Release Info. Highsnobiety. https://www.highsnobiety.com/p/rhude-mclaren-collaboration/
+Chadwick, G [Photographer]. (2019). man standing on street wearing black Ramones graphic crew-neck t-shirt and black knit cap during daytime [Photograph]. Unsplash. https://unsplash.com/photos/man-standing-on-street-wearing-black-ramones-graphic-crew-neck-t-shirt-and-black-knit-cap-during-daytime-1pv0_6QjvlI 
+eightyfiveclo. (n.d.). Lookbook/authentic flavor. Eightyfiveclo. https://www.eightyfiveclo.com/en/pages/lookbook-authentic-flavor
+HEARTSTEEL, League of Legends, & BAEKHYUN (feat. Cal Scruby, ØZI, and tobi lou). (2023). PARANOIA [Song]. 
+HeroIcons [icon Library]. (n.d). HeroIcons. https://heroicons.com/ 
+McGuffie, L [Font Designer]. (2017). Tusker Grotesk [Font]. Behance. https://www.behance.net/gallery/56863025/Tusker-Grotesk-Commercial-Type-Family 
+Nelson, E. (2019, December 17). Why the Clash’s ‘London Calling’ Still Matters. The Ringer. https://www.theringer.com/music/2019/12/17/21024982/the-clash-london-calling-40th-anniversary
+Noeeko [Creative Studio]. (n.d). Free Front T-Shirt Mockup [Mockup]. Mr.Mockup. https://mrmockup.com/free-front-t-shirt-mockup/ 
+Noeeko [Creative Studio]. (n.d). Woman Wears Canvas Bag Mockup [Mockup]. Mr.Mockup. https://mrmockup.com/woman-wears-canvas-bag-mockup/  
+Noeeko [Creative Studio]. (n.d). Free Longsleave on Men in Studio Mockup [Mockup]. Mr.Mockup. https://mrmockup.com/free-longsleave-on-men-in-studio-mockup/ 
+Noeeko [Creative Studio]. (n.d). Men’s Hoodie PSD Mockup [Mockup]. Mr.Mockup. https://mrmockup.com/mens-hoodie-psd-mockup/ 
+Noeeko [Creative Studio]. (n.d). Men in Hoodie Mockup [Mockup]. Mr.Mockup. Men in Hoodie Mockup. https://mrmockup.com/men-in-hoodie-mockup/ 
+Wikipedia contributors. (2023, November 2). Blink-182 (album). Wikipedia. https://en.wikipedia.org/wiki/Blink-182_%28album%29
+Rajput, R [Font Designer]. (n.d). Mango Grotesque [Font]. Gumroad. https://rajputrajesh-448.gumroad.com/l/MangoGrotesque 
+TYPEHEIGHT [Font Designer]. (n.d). MANIC Erratic Handwritten Font [Font]. CreativeMarket. https://creativemarket.com/TYPEHEIST/5253009-MANIC-Erratic-Handwritten-Font
